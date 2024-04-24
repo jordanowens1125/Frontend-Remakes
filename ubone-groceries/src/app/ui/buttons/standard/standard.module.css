@@ -1,0 +1,35 @@
+.primary {
+  background-color: var(--primary);
+}
+
+.primary:hover {
+  background-color: var(--secondary);
+  color: var(--black);
+}
+
+.secondary {
+  background-color: var(--secondary);
+}
+
+.tertiary {
+  background-color: var(--tertiary);
+}
+
+.disabled {
+  background-color: var(--disabled);
+  color: var(--white);
+  opacity: 0.45;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+.transparent {
+  background-color: transparent;
+  
+}
+
+.transparentsquare {
+  aspect-ratio: 1;
+  padding: 0.5rem;
+}

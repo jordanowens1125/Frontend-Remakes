@@ -1,0 +1,10 @@
+.roundpair{
+    display: flex;
+    gap: .5rem;
+}
+
+.roundpair button{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 0.5rem;
+}

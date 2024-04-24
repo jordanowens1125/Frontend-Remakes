@@ -1,0 +1,11 @@
+#top {
+  position: fixed;
+  bottom: 1rem;
+  right: 0;
+  aspect-ratio: 1;
+  padding: .5rem;
+}
+
+#top img {
+  width: 20px;
+}

@@ -1,0 +1,10 @@
+.transparentpair{
+    display: flex;
+    gap: .5rem;
+}
+
+.transparentpair button{
+    aspect-ratio: 1;
+    padding: .25rem;
+    background-color: transparent;
+}
