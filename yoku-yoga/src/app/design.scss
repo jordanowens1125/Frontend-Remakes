@@ -1,0 +1,129 @@
+:root {
+  --primary-100: #eff7f9;
+  --primary-200: #7ad1c4;
+  --primary-300: #99dcd1;
+  --primary-400: #3dbca8;
+  --primary-500: #227179;
+  --primary-600: #eff7f9;
+  --primary-700: #8fbab3;
+  --primary-800: #6f948d;
+  --primary-900: #eff7f9;
+  --white: #fff;
+
+  --fs-14: 14px;
+  --fs-15: 15px;
+  --fs-16: 16px;
+  --fs-17: 17px;
+  --fs-18: 18px;
+  --fs-19: 19px;
+  --fs-20: 20px;
+  --fs-21: 21px;
+  --fs-23: 23px;
+  --fs-24: 24px;
+  --fs-25: 25px;
+  --fs-27: 27px;
+  --fs-1: 1;
+  --fs-1: 1;
+  --fs-1: 1;
+  --fs-1: 1;
+  --fs-1: 1;
+  --fs-40: 40px;
+  --fs-45: 45px;
+  --fs-55: 55px;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+}
+
+// color mixin
+@mixin primary-100 {
+  color:var(--primary-100);
+}
+
+@mixin primary-200 {
+  color:var(--primary-200);
+}
+
+@mixin primary-300 {
+  color:var(--primary-300);
+}
+
+@mixin primary-400 {
+  color:var(--primary-400);
+}
+
+@mixin primary-500 {
+  color:var(--primary-500);
+}
+
+@mixin primary-600 {
+  color:var(--primary-600);
+}
+
+@mixin primary-700 {
+  color:var(--primary700);
+}
+
+@mixin primary-800 {
+  color:var(--primary-800);
+}
+
+@mixin primary-900 {
+  color:var(--primary-900);
+}
+
+@mixin white {
+  color:var(--primary-100);
+}
+
+// Fontsize mixins
+
+@mixin fs-14 {
+  font-size: var(--fs-14);
+}
+
+@mixin fs-15 {
+  font-size: var(--fs-15);
+}
+
+@mixin fs-16 {
+  font-size: var(--fs-16);
+}
+
+@mixin fs-17 {
+  font-size: var(--fs-17);
+}
+
+@mixin fs-18 {
+  font-size: var(--fs-18);
+}
+@mixin fs-19 {
+  font-size: var(--fs-19);
+}
+@mixin fs-20 {
+  font-size: var(--fs-20);
+}
+@mixin fs-21 {
+  font-size: var(--fs-21);
+}
+@mixin fs-23 {
+  font-size: var(--fs-23);
+}
+@mixin fs-24 {
+  font-size: var(--fs-24);
+}
+@mixin fs-25 {
+  font-size: var(--fs-25);
+}
+@mixin fs-27 {
+  font-size: var(--fs-27);
+}
+@mixin fs-45 {
+  font-size: var(--fs-45);
+}
+@mixin fs-55 {
+  font-size: var(--fs-55);
+}
