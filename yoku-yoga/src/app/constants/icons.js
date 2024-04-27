@@ -1,3 +1,5 @@
+const ACCOUNT = "account.svg";
+const CANCEL = "cancel.svg";
 const RIGHT = "";
 const LESSON = "lesson.svg";
 const LEFT = "";
@@ -9,8 +11,8 @@ const INSTAGRAM = "";
 const SKYPE = "skype.svg";
 const MAIL = "mail.svg";
 const PHONE = "";
-// const FACEBOOK = "";
-// const FACEBOOK = "";
+const WHITELOGO = "white-logo.png";
+const DARKLOGO = "dark-logo.png";
 // const FACEBOOK = "";
 // const FACEBOOK = "";
 // const FACEBOOK = "";
@@ -36,6 +38,7 @@ const PHONE = "";
 
 export {
   RIGHT,
+  CANCEL,
   LESSON,
   LEFT,
   FACEBOOK,
@@ -46,4 +49,7 @@ export {
   SKYPE,
   MAIL,
   PHONE,
+  WHITELOGO,
+  DARKLOGO,
+  ACCOUNT,
 };
