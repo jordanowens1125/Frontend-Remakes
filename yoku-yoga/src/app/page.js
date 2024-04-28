@@ -24,8 +24,8 @@ export default function Home() {
         <button className="btn-8">Button 8</button>
         <button className="btn-9">Button 9</button>
       </div>
-      <HeroSection1 />
-      <HeroSection2 />
+      {/* <HeroSection1 />
+      <HeroSection2 /> */}
       <HeroSection3 />
       <HeroSection4 />
       <HeroSection5 />

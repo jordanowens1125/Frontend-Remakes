@@ -3,16 +3,20 @@ import { RIGHT } from "@/app/constants/icons";
 export default function HomeSection3() {
   return (
     <section id="classes">
-      <h2>Popular Online Classes</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
-        laboriosam rerum velit, ipsam sed ratione labore nostrum fugit, numquam
-        corporis culpa vel repudiandae, voluptatum aperiam voluptate? Molestias
-        cum ea obcaecati.
-      </p>
-      <button>
-        Browse All Classes <img src={RIGHT}></img>
-      </button>
+      <div className="container">
+        <div className="top">
+          <h2 className="heading">Popular Online Classes</h2>
+          <p>
+            A meditative means of discovering dysfunctional perception and
+            cognition, as well as overcoming it to release any suffering, find
+            inner peace and salvation.
+          </p>
+          <button>
+            Browse All Classes <img src={RIGHT} alt="Arrow" />
+          </button>
+        </div>
+      </div>
+
       <div className="items">
         <div className="item">
           <div className="img-container">

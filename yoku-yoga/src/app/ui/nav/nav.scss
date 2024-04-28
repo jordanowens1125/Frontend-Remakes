@@ -5,15 +5,13 @@
 nav {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  max-width: unset;
   padding: 0;
   text-align: center;
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-    max-width: 500px;
+    padding: 1.5rem 3rem;
   }
   .logo {
     width: 100px;
@@ -132,10 +130,72 @@ nav {
       max-width: var(--maxContainerWidth);
     }
     .right {
+      display: flex;
+      .active {
+        right: unset;
+      }
       .cancel,
       .back,
       .lines {
         display: none;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        .a {
+          position: relative;
+          .dropdown {
+            display: none;
+            position: absolute;
+            margin-left: -15px;
+            // margin-top: 20px;
+            min-width: 220px;
+            box-shadow: 0 0 27px rgba(0, 0, 0, 0.07);
+            -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.07);
+            -moz-box-shadow: 0 0 27px rgba(0, 0, 0, 0.07);
+            .b {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              background-color: pink;
+              position: relative;
+              .c {
+                position: relative;
+                .dropdown {
+                  position: static;
+                }
+                .b {
+                  display: none;
+                }
+              }
+              .c:hover {
+                .b {
+                  display: flex;
+                  position: absolute;
+                  left: 100%;
+                  top: 0;
+                  background-color: yellow;
+                  box-shadow: 0 0 27px rgba(0, 0, 0, 0.07);
+                  -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.07);
+                  -moz-box-shadow: 0 0 27px rgba(0, 0, 0, 0.07);
+                }
+              }
+            }
+            a,
+            .c {
+              border-bottom: 1px solid rgb(219, 219, 219);
+              padding: 18px;
+              text-align: left;
+              width: 100%;
+            }
+          }
+        }
+        .a:hover {
+          .dropdown {
+            display: flex;
+          }
+        }
       }
     }
   }

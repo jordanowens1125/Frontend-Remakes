@@ -1,6 +1,6 @@
 const ACCOUNT = "account.svg";
 const CANCEL = "cancel.svg";
-const RIGHT = "";
+const RIGHT = "right.svg";
 const LESSON = "lesson.svg";
 const LEFT = "";
 const FACEBOOK = "facebook.svg";

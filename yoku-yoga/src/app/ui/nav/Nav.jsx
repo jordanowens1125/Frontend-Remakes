@@ -15,19 +15,29 @@ export default function Nav() {
   };
   const [state, setState] = useState(clearState);
   const clearPrimary = () => {
-    setState({ ...state, primary: false, secondary: false });
+    if (window.innerWidth < 1000) {
+      setState({ ...state, primary: false, secondary: false });
+    }
   };
 
-  const clearSecondary = () => {
-    setState({ ...state, secondary: false });
+  const clearSecondary = (e) => {
+    if (window.innerWidth < 1000) {
+      setState({ ...state, secondary: false });
+    }
   };
 
   const setPrimary = (primary) => {
-    setState({ ...state, primary: primary, secondary: false });
+    if (window.innerWidth < 1000) {
+      setState({ ...state, primary: primary, secondary: false });
+    }
   };
 
-  const setSecondary = (secondary) => {
-    setState({ ...state, secondary: secondary });
+  const setSecondary = (e, secondary) => {
+    if (!e.target.classList.contains("back")) {
+      if (window.innerWidth < 1000) {
+        setState({ ...state, secondary: secondary });
+      }
+    }
   };
 
   const [
@@ -130,31 +140,32 @@ export default function Nav() {
                       />
                       <span
                         className="c"
-                        onClick={() => setSecondary(CLASSLIST)}
+                        onClick={(e) => setSecondary(e, CLASSLIST)}
                       >
                         Online Classes
-                      </span>
-                      <div
-                        className={
-                          state.secondary == CLASSLIST
-                            ? "dropdown active"
-                            : "dropdown"
-                        }
-                      >
-                        <div className="b">
-                          <img
-                            src={CANCEL}
-                            alt=""
-                            className="back"
-                            onClick={clearSecondary}
-                          />
-                          <a href="/">Course List 1</a>
-                          <a href="/">Course List 2</a>
-                          <a href="/">Course List 3</a>
-                          <a href="/">Course List 4</a>
-                          <a href="/">Course List 5</a>
+                        <div
+                          className={
+                            state.secondary == CLASSLIST
+                              ? "dropdown active"
+                              : "dropdown"
+                          }
+                        >
+                          <div className="b">
+                            <img
+                              src={CANCEL}
+                              alt=""
+                              className="back"
+                              onClick={clearSecondary}
+                            />
+                            <a href="/">Course List 1</a>
+                            <a href="/">Course List 2</a>
+                            <a href="/">Course List 3</a>
+                            <a href="/">Course List 4</a>
+                            <a href="/">Course List 5</a>
+                          </div>
                         </div>
-                      </div>
+                      </span>
+
                       <a href="/">Offline Classes</a>
                     </div>
                   </div>
@@ -174,50 +185,58 @@ export default function Nav() {
                         className="back"
                         onClick={clearPrimary}
                       />
-                      <span className="c" onClick={() => setSecondary(TEAM)}>
+                      <span
+                        className="c"
+                        onClick={(e) => setSecondary(e, TEAM)}
+                      >
                         Team
-                      </span>
-                      <div
-                        className={
-                          state.secondary == TEAM
-                            ? "dropdown active"
-                            : "dropdown"
-                        }
-                      >
-                        <div className="b">
-                          <img
-                            src={CANCEL}
-                            alt=""
-                            className="back"
-                            onClick={clearSecondary}
-                          />
-                          <a href="/">Team 1</a>
-                          <a href="/">Team 2</a>
-                          <a href="/">Team 3</a>
+                        <div
+                          className={
+                            state.secondary == TEAM
+                              ? "dropdown active"
+                              : "dropdown"
+                          }
+                        >
+                          <div className="b">
+                            <img
+                              src={CANCEL}
+                              alt=""
+                              className="back"
+                              onClick={clearSecondary}
+                            />
+                            <a href="/">Team 1</a>
+                            <a href="/">Team 2</a>
+                            <a href="/">Team 3</a>
+                          </div>
                         </div>
-                      </div>
-                      <span className="c" onClick={() => setSecondary(CONTACT)}>
+                      </span>
+
+                      <span
+                        className="c"
+                        onClick={(e) => setSecondary(e, CONTACT)}
+                      >
                         Contact
-                      </span>
-                      <div
-                        className={
-                          state.secondary == CONTACT
-                            ? "dropdown active"
-                            : "dropdown"
-                        }
-                      >
-                        <div className="b">
-                          <img
-                            src={CANCEL}
-                            alt=""
-                            className="back"
-                            onClick={clearSecondary}
-                          />
-                          <a href="/">Contact 1</a>
-                          <a href="/">Contact 2</a>
-                          <a href="/">Contact 3</a>
+                        <div
+                          className={
+                            state.secondary == CONTACT
+                              ? "dropdown active"
+                              : "dropdown"
+                          }
+                        >
+                          <div className="b">
+                            <img
+                              src={CANCEL}
+                              alt=""
+                              className="back"
+                              onClick={clearSecondary}
+                            />
+                            <a href="/">Contact 1</a>
+                            <a href="/">Contact 2</a>
+                            <a href="/">Contact 3</a>
+                          </div>
                         </div>
-                      </div>
+                      </span>
+
                       <a href="/">Price Table</a>
                       <a href="/">Gallery</a>
                       <a href="/">Maintenance</a>
