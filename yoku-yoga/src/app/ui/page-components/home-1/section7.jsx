@@ -48,7 +48,7 @@ export default function HomeSection7() {
           </div>
           <div className="right">
             <img
-              src="about-1/section-1"
+              src="about-1/section-1.png"
               alt=""
             />
           </div>

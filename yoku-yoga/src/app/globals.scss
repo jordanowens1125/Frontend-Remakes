@@ -45,7 +45,10 @@ body {
 }
 
 section {
-  padding: 60px 0 30px;
+  padding: 30px 0 30px;
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
 }
 
 .container,
@@ -78,6 +81,13 @@ nav {
     margin-bottom: 30px;
     .arrows {
       display: none;
+      button {
+        padding: 1rem;
+        border-radius: 0;
+        height: fit-content;
+        background-color: transparent;
+        margin: 0;
+      }
     }
     button {
       margin-top: 37px;
@@ -116,7 +126,7 @@ nav {
         grid-area: arrows;
         display: flex;
         justify-content: flex-end;
-        width: 100%;
+        margin-right: 30px;
       }
       button {
         grid-area: button;
@@ -151,6 +161,31 @@ button:hover {
 }
 
 // Text styles and mixins
+
+.pageheading {
+  text-align: center;
+  position: relative;
+  padding: 50px 20px 0;
+
+  ::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -180%;
+    bottom: 0;
+    height: 200%;
+    right: -50%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    border: 45px solid #227179;
+    opacity: 0.1;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #227179;
+  }
+}
 
 .page-heading-text {
   font-size: var(--fs-40);
@@ -325,7 +360,7 @@ button,
   }
 }
 
-@media screen and (min-woidth: 767px) {
+@media screen and (min-width: 767px) {
   .page-heading {
     padding: 270px 0px 160px 0;
   }

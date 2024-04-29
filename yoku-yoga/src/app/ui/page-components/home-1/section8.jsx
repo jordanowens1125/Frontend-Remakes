@@ -63,10 +63,10 @@ export default function HomeSection8() {
           <p>{sectionText}</p>
           <div className="arrows">
             <button onClick={downOne}>
-              <img src={LEFT} alt="" />
+              <img src={LEFT} alt="Left" />
             </button>
             <button onClick={upOne}>
-              <img src={RIGHT} alt="" />
+              <img src={RIGHT} alt="Right" />
             </button>
           </div>
         </div>

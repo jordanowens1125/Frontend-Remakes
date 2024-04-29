@@ -114,12 +114,12 @@ export default function Nav() {
                         className="back"
                         onClick={clearPrimary}
                       />
-                      <a href="/">About 1</a>
-                      <a href="/">About 2</a>
-                      <a href="/">Our Instructors 1</a>
-                      <a href="/">Our Instructors 2</a>
-                      <a href="/">Timetable</a>
-                      <a href="/">FAQ</a>
+                      <a href="/about1">About 1</a>
+                      <a href="/about2">About 2</a>
+                      <a href="/instructor1">Our Instructors 1</a>
+                      <a href="/instructor2">Our Instructors 2</a>
+                      <a href="/timetable">Timetable</a>
+                      <a href="/faq">FAQ</a>
                     </div>
                   </div>
                 </div>
@@ -157,11 +157,11 @@ export default function Nav() {
                               className="back"
                               onClick={clearSecondary}
                             />
-                            <a href="/">Course List 1</a>
-                            <a href="/">Course List 2</a>
-                            <a href="/">Course List 3</a>
-                            <a href="/">Course List 4</a>
-                            <a href="/">Course List 5</a>
+                            <a href="/courselist1">Course List 1</a>
+                            <a href="/courselist2">Course List 2</a>
+                            <a href="/courselist3">Course List 3</a>
+                            <a href="/courselist4">Course List 4</a>
+                            <a href="/courselist5">Course List 5</a>
                           </div>
                         </div>
                       </span>
@@ -204,9 +204,9 @@ export default function Nav() {
                               className="back"
                               onClick={clearSecondary}
                             />
-                            <a href="/">Team 1</a>
-                            <a href="/">Team 2</a>
-                            <a href="/">Team 3</a>
+                            <a href="/team1">Team 1</a>
+                            <a href="/team2">Team 2</a>
+                            <a href="/team3">Team 3</a>
                           </div>
                         </div>
                       </span>
@@ -237,11 +237,11 @@ export default function Nav() {
                         </div>
                       </span>
 
-                      <a href="/">Price Table</a>
-                      <a href="/">Gallery</a>
-                      <a href="/">Maintenance</a>
-                      <a href="/">Coming Soon</a>
-                      <a href="/">404 Page</a>
+                      <a href="/price">Price Table</a>
+                      <a href="/gallery">Gallery</a>
+                      <a href="/maintenance">Maintenance</a>
+                      <a href="/comingsoon">Coming Soon</a>
+                      <a href="/404">404 Page</a>
                     </div>
                   </div>
                 </div>
