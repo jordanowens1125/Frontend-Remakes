@@ -49,6 +49,9 @@ section {
   @media screen and (min-width: 768px) {
     padding: 60px 0;
   }
+  p {
+    line-height: 1.7;
+  }
 }
 
 .container,
@@ -165,7 +168,7 @@ button:hover {
 .pageheading {
   text-align: center;
   position: relative;
-  padding: 50px 20px 0;
+  padding: 50px 0;
 
   ::after {
     display: block;
@@ -184,6 +187,13 @@ button:hover {
     font-size: 40px;
     font-weight: 500;
     color: #227179;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 130px 0;
+    h1 {
+      font-size: 59px;
+    }
   }
 }
 
@@ -234,7 +244,7 @@ button,
 .btn-6,
 .btn-7,
 .btn-8,
-.btn-9 {
+.btn-9,.btn-10 {
   border: none;
   font-weight: 600;
   line-height: 11px;
@@ -325,6 +335,17 @@ button,
   box-shadow: 0px 10px 25px rgba(242, 185, 182, 100);
   -moz-box-shadow: 0px 10px 25px rgba(242, 185, 182, 100);
   -webkit-box-shadow: 0px 10px 25px rgba(242, 185, 182, 100);
+  letter-spacing: 0;
+}
+
+.btn-10 {
+  background-color: var(--white);
+  color:rgb(84, 118, 112);
+  fill:rgb(84, 118, 112);
+  font-size: 600;
+  box-shadow: rgb(225, 238, 236) 0px 10px 25px;
+  -moz-box-shadow: rgb(225, 238, 236) 0px 10px 25px;
+  -webkit-box-shadow: rgb(225, 238, 236) 0px 10px 25px;
   letter-spacing: 0;
 }
 

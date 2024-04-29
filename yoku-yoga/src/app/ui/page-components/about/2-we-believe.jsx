@@ -6,16 +6,47 @@ export default function Section2() {
           <div className="left">
             <h4 className="subheading-2">Our faith</h4>
             <h3 className="heading">We believe in making yoga inclusive</h3>
-            <p className="text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptatibus natus rerum labore sequi in quis pariatur dolor,
-              laudantium aperiam beatae esse vel modi magnam temporibus
-              distinctio eveniet quo dolores.
-            </p>
-            <div className="items"></div>
+
+            <div className="items">
+              <div className="item">
+                <img src="about1/section2-1.png" alt="" />
+                <p className="item-h">How we became Yoku</p>
+                <p>
+                  Modern yoga consists of a range of techniques including asanas
+                  and meditation derived
+                </p>
+              </div>
+
+              <div className="item">
+                <img src="about1/section2-1.png" alt="" />
+                <p className="item-h">How we became Yoku</p>
+                <p>
+                  Modern yoga consists of a range of techniques including asanas
+                  and meditation derived
+                </p>
+              </div>
+
+              <div className="item">
+                <img src="about1/section2-1.png" alt="" />
+                <p className="item-h">How we became Yoku</p>
+                <p>
+                  Modern yoga consists of a range of techniques including asanas
+                  and meditation derived
+                </p>
+              </div>
+
+              <div className="item">
+                <img src="about1/section2-1.png" alt="" />
+                <p className="item-h">How we became Yoku</p>
+                <p>
+                  Modern yoga consists of a range of techniques including asanas
+                  and meditation derived
+                </p>
+              </div>
+            </div>
           </div>
           <div className="right">
-            <img src="about-1/section-1" alt="" />
+            <img src="about1/section-1.png" alt="" />
           </div>
         </div>
       </div>

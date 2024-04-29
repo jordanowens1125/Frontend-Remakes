@@ -4,7 +4,7 @@ export default function Section1() {
       <div className="container">
         <div className="sbs">
           <div className="left">
-            <img src="about-1/section-1.png" alt="Foundation Image" />
+            <img src="about1/section-1.png" alt="Foundation Image" />
           </div>
           <div className="right">
             <span className="subheading">About our school</span>

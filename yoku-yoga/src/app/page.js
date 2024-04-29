@@ -1,14 +1,14 @@
 import './globals.scss'
-import './ui/page-components/home-1/home1.scss'
-import HeroSection1 from './ui/page-components/home-1/sectionhero'
-import HeroSection2 from "./ui/page-components/home-1/section2";
-import HeroSection3 from "./ui/page-components/home-1/section3";
-import HeroSection4 from "./ui/page-components/home-1/section4";
-import HeroSection5 from "./ui/page-components/home-1/section5";
-import HeroSection6 from "./ui/page-components/home-1/section6";
-import HeroSection7 from "./ui/page-components/home-1/section7";
-import HeroSection8 from "./ui/page-components/home-1/section8";
-import HeroSection9 from "./ui/page-components/home-1/section9";
+import './ui/page-components/home1/home1.scss'
+import HeroSection1 from './ui/page-components/home1/sectionhero'
+import HeroSection2 from "./ui/page-components/home1/section2";
+import HeroSection3 from "./ui/page-components/home1/section3";
+import HeroSection4 from "./ui/page-components/home1/section4";
+import HeroSection5 from "./ui/page-components/home1/section5";
+import HeroSection6 from "./ui/page-components/home1/section6";
+import HeroSection7 from "./ui/page-components/home1/section7";
+import HeroSection8 from "./ui/page-components/home1/section8";
+import HeroSection9 from "./ui/page-components/home1/section9";
 
 export default function Home() {
   return (
