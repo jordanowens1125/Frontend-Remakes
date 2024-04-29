@@ -1,0 +1,9 @@
+.companies {
+  @media screen and (min-width: 425px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 860px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

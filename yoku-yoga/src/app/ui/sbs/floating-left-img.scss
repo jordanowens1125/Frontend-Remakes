@@ -1,0 +1,24 @@
+.sbs-left {
+  @media screen and (min-width: 850px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". right";
+    position: relative;
+    .right {
+      grid-area: right;
+      padding-top: 110px;
+      .subheading {
+        margin-bottom: 1rem;
+        display: block;
+      }
+    }
+    .left {
+      position: absolute;
+      left: 0%;
+      width: 65vw;
+      height: 100%;
+      transform: translate(-35%, -10%);
+      max-width: 810px;
+    }
+  }
+}

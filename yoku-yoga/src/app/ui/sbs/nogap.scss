@@ -1,0 +1,14 @@
+.nogap {
+  display: flex;
+  flex-direction: column;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+  @media screen and (min-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}

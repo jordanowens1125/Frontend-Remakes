@@ -1,0 +1,32 @@
+.stats {
+  gap: 60px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: #404b48;
+    }
+    .item-h {
+      font-size: 45px;
+      font-weight: 600;
+      padding-top: 24px;
+    }
+    .title {
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #3cc3a9;
+    }
+    img {
+      width: fit-content;
+      height: 40px;
+    }
+  }
+  @media screen and (min-width: 850px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

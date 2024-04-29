@@ -1,0 +1,40 @@
+.content1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .subheading {
+    font-size: 25px;
+    font-weight: 400;
+    color: #3dbca8;
+    position: relative;
+    text-transform: capitalize;
+    display: block;
+    width: fit-content;
+  }
+  .subheading::after {
+    content: "";
+    left: 100%;
+    margin-left: 20px;
+    bottom: 5px;
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 65px;
+    background-color: #dbe8e7;
+  }
+  .heading {
+    font-size: 43px;
+    font-weight: 600;
+    color: rgb(34, 113, 121);
+  }
+  p {
+    color: #6f6f6f;
+    font-weight: 400;
+  }
+  .icon {
+    width: 92px;
+  }
+  .buttons {
+    padding-top: 25px;
+  }
+}

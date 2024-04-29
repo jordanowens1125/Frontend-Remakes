@@ -1,0 +1,48 @@
+.bars {
+  gap: 24px;
+  .item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    .title {
+      margin-left: 0;
+      color: #181818;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 13px;
+    }
+    .score {
+      margin: auto;
+      margin-right: 0;
+      font-size: 13px;
+      font-weight: 700;
+      color: #8e8e8e;
+    }
+    span {
+      width: 100%;
+      grid-column: -1/1;
+      background-color: #dcdcdc;
+      border-radius: 30px;
+      height: 6px;
+      position: relative;
+      overflow: hidden;
+    }
+    span::after {
+      height: 100%;
+      width: var(--width);
+      display: block;
+      content: "";
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: var(--barColor);
+      position: absolute;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding: 40px 20px 0;
+  }
+}

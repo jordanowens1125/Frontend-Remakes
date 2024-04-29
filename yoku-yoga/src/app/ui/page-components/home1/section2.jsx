@@ -2,7 +2,7 @@ export default function HomeSection2() {
   return (
     <section id="features">
       <div className="container">
-        <div className="items">
+        <div className="items features1">
           <div className="item">
             <img src="home1/feature1.png" alt="Feature 1" />
             <p className="item-h">Many Styles</p>

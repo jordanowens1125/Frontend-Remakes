@@ -1,3 +1,3 @@
-export default function Page() {
-  return <>Not Found</>;
+export default function About2Section1() {
+  return 1;
 }

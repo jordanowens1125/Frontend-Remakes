@@ -1,0 +1,10 @@
+.standard-sbs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media screen and (min-width: 850px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

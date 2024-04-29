@@ -1,6 +1,7 @@
 const ACCOUNT = "account.svg";
 const CANCEL = "cancel.svg";
 const RIGHT = "right.svg";
+const SEND = "send.svg";
 const LESSON = "lesson.svg";
 const LEFT = "left.svg";
 const FACEBOOK = "facebook.svg";
@@ -52,4 +53,5 @@ export {
   WHITELOGO,
   DARKLOGO,
   ACCOUNT,
+  SEND,
 };

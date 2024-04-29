@@ -81,7 +81,6 @@
 }
 @media screen and (min-width: 1100px) {
   #became {
-    padding: 180px 40px;
     .sbs {
       .left {
         width: 65vw;
@@ -223,43 +222,16 @@
     color: rgb(63, 75, 73);
     font-size: 40px;
   }
-  p {
-    color: #9b9b9b;
-  }
   .items {
     padding-top: 70px;
     gap: 60px;
   }
-  .item {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  
+}
 
-    p {
-      color: #404b48;
-    }
-    .item-h {
-      font-size: 45px;
-      font-weight: 600;
-      padding-top: 24px;
-    }
-    .title {
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-    img {
-      width: fit-content;
-      height: 40px;
-    }
-  }
-
-  @media screen and (min-width: 860px) {
-    .items {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
+#newsletter {
+  background-color: #f5f5f5;
+  .companies {
+    padding-bottom: 60px;
   }
 }
