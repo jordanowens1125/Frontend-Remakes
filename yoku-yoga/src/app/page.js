@@ -13,7 +13,7 @@ import HeroSection9 from "./ui/page-components/home-1/section9";
 export default function Home() {
   return (
     <main className="">
-      <div className="col">
+      {/* <div className="col">
         <button className="btn-1">Button 1</button>
         <button className="btn-2">Button 2</button>
         <button className="btn-3">Button 3</button>
@@ -23,9 +23,9 @@ export default function Home() {
         <button className="btn-7">Button 7</button>
         <button className="btn-8">Button 8</button>
         <button className="btn-9">Button 9</button>
-      </div>
-      {/* <HeroSection1 />
-      <HeroSection2 /> */}
+      </div> */}
+      {/* <HeroSection1 /> */}
+      <HeroSection2 />
       <HeroSection3 />
       <HeroSection4 />
       <HeroSection5 />
