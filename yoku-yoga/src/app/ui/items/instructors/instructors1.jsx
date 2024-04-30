@@ -5,32 +5,32 @@ export default function Instructors1({
     {
       info: "2",
       name: "Jane Smith",
-      img: "",
+      img: "instructor2/1.jpg",
     },
     {
       info: "2",
       name: "Mildred Reed",
-      img: "",
+      img: "instructor2/2.jpg",
     },
     {
       info: "2",
       name: "Madison Diaz",
-      img: "",
+      img: "instructor2/3.jpg",
     },
     {
       info: "2",
       name: "Brenda Roberts",
-      img: "",
+      img: "instructor2/4.jpg",
     },
     {
       info: "2",
       name: "Lori Mendoza",
-      img: "",
+      img: "instructor2/5.jpg",
     },
     {
       info: "2",
       name: "Crystal Gibson",
-      img: "",
+      img: "instructor2/6.jpg",
     },
   ],
 }) {
@@ -38,8 +38,8 @@ export default function Instructors1({
     <div className="items instructors1">
       {items.map((item) => (
         <div className="item" key={item.name}>
-          <img src="about2/section2.jpg" alt="" />
-          <p className="item-h">Jane Smith</p>
+          <img src={item.img} alt={item.name} />
+          <p className="item-h">{item.name}</p>
           <p className="info">{item.info} classes</p>
         </div>
       ))}

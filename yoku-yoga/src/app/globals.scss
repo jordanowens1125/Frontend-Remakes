@@ -299,10 +299,67 @@ button,
 
 /* backgrounds */
 
-.col {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.notfound {
+  background-color: #dcf9f4;
+  position: relative;
+  opacity: .9;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+  }
+
+  h1 {
+    font-size: 40px;
+    color: #227179;
+  }
+  h3 {
+    font-size: 35px;
+    color: #227179;
+    text-transform: uppercase;
+  }
+  .notfound-bg {
+    background-image: url("../../public/notfound.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.18;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  p {
+    color: #547670;
+  }
+  a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #718786;
+  }
+  a:hover {
+    color: #227179;
+  }
+  @media screen and (min-width: 375px) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+  @media screen and (min-width: 425px) {
+    padding-top: 175px;
+    padding-bottom: 175px;
+  }
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 150px;
+    }
+  }
 }
 
 //Reused Classes

@@ -1,0 +1,31 @@
+.instruction2header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .header {
+    position: relative;
+    color: #404b48;
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 24px;
+  }
+  .header::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    background-color: #dbe8e7;
+    bottom: 0;
+  }
+  p {
+    color: #4f7770;
+    font-size: 19px;
+    font-weight: 400;
+  }
+  @media screen and (min-width: 850px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
