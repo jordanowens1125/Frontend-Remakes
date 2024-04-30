@@ -1,0 +1,51 @@
+.pageheader2 {
+  background-image: url("../../../../public/pageheader-bgs/2.png");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .subheading {
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #547670;
+    text-transform: capitalize;
+  }
+  .heading {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: rgb(34, 113, 121);
+  }
+  .text {
+    padding-bottom: 30px;
+    max-width: 760px;
+    color: #4f7770;
+    font-size: 19px;
+  }
+  .divider {
+    width: 2px;
+    height: 35px;
+    background-color: #ccecea;
+    margin-top: 20px;
+    padding-top: 40px;
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      padding-top: 117px;
+      padding-bottom: 118px;
+    }
+    .heading {
+      font-size: 56px;
+    }
+  }
+}

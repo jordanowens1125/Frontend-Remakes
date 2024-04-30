@@ -1,4 +1,4 @@
-import Companies from "../../items/companies";
+import Companies from "../ui/items/companies";
 
 export default function HomeSection6() {
   return (

@@ -1,7 +1,6 @@
-import StatList from "../../items/statlist";
+import StatList from "../ui/items/statlist";
 
 export default function AboutSection3() {
-  
   return (
     <section id="numbers">
       <div className="container">

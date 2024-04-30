@@ -1,0 +1,25 @@
+.pageheader1 {
+  background-image: url("../../../../public/pageheader-bgs/1.png");
+  background-position: center;
+  background-size: cover;
+  .header {
+    color: #227179;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    .header {
+      font-size: 59px;
+    }
+    .container {
+      padding: 75px 0;
+    }
+  }
+}

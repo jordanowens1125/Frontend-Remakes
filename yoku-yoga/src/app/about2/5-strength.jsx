@@ -1,6 +1,6 @@
-import Content1 from "../../content/content1";
-import Bars from "../../items/bars/bars";
-import StandardSBS from "../../sbs/standard";
+import Content1 from "../ui/content/content1";
+import Bars from "../ui/items/bars/bars";
+import StandardSBS from "../ui/sbs/standard";
 
 export default function About2Section5() {
   const text =

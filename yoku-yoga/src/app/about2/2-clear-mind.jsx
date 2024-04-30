@@ -1,5 +1,5 @@
-import Content1 from "../../content/content1";
-import NoGapSBS from "../../sbs/nogap";
+import Content1 from "../ui/content/content1";
+import NoGapSBS from "../ui/sbs/nogap";
 
 export default function About2Section2() {
   const text =

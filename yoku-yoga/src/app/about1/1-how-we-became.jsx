@@ -1,6 +1,6 @@
 import { headers } from "next/headers";
-import Content1 from "../../content/content1";
-import FloatingLeftImgSBS from "../../sbs/floating-left-img";
+import Content1 from "../ui/content/content1";
+import FloatingLeftImgSBS from "../ui/sbs/floating-left-img";
 
 export default function Section1() {
   const text =

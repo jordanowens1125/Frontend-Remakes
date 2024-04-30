@@ -1,4 +1,4 @@
-import StatList from "../../items/statlist";
+import StatList from "../ui/items/statlist";
 
 export default function About2Section3() {
   return (

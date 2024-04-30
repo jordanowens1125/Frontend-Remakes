@@ -1,4 +1,7 @@
 .sbs-left {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
   @media screen and (min-width: 850px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,18 +9,22 @@
     position: relative;
     .right {
       grid-area: right;
-      padding-top: 110px;
+      // padding-top: 110px;
       .subheading {
-        margin-bottom: 1rem;
         display: block;
       }
     }
     .left {
+      max-width: 810px;
       position: absolute;
       left: 0%;
       width: 65vw;
-      transform: translate(-35%, -10%);
-      max-width: 810px;
+      transform: translate(-35%, -20%);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .left {
+      transform: translate(-20%, -20%);
     }
   }
 }

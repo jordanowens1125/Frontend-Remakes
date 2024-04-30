@@ -1,5 +1,5 @@
 import { SEND } from "@/app/constants/icons";
-import Companies from "../../items/companies";
+import Companies from "../ui/items/companies";
 
 export default function AboutSection4() {
   return (

@@ -1,0 +1,42 @@
+.instruction1header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .header {
+    font-size: 30px;
+    font-weight: 600;
+    color: #227179;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .header::after {
+    display: block;
+    content: "";
+    width: 65px;
+    margin-left: 25px;
+    height: 2px;
+    background-color: #dbe8e7;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .text {
+    color: #878787;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 425px) {
+    .header {
+      padding-bottom: 0;
+      display: flex;
+      align-items: flex-end;
+    }
+    .header::after {
+      position: static;
+      margin-bottom: 7px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    width: 66%;
+  }
+}
