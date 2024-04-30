@@ -1,26 +1,10 @@
-import { SEND } from "@/app/constants/icons";
 import Companies from "../ui/items/companies";
+import TopBottom from "../ui/topbottom/topbottom";
+import CTA1 from "../ui/ctas/cta1";
+import { GREYBG } from "../constants/backgroundClasses";
 
 export default function AboutSection4() {
   return (
-    <section id="newsletter">
-      <div className="container">
-        {<Companies />}
-        <div className="cta">
-          <h3 className="cta-heading">Subscribe to our newsletter</h3>
-          <p>Get updates for new classes and new products.</p>
-          <form>
-            <span>
-              <img src={SEND} alt="Send" />
-              <input type="text" placeholder="Your Email Address" />
-            </span>
-
-            <button className="btn-3" type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
+    <TopBottom top={<Companies />} bottom={<CTA1 />} sectionClasses={GREYBG} />
   );
 }

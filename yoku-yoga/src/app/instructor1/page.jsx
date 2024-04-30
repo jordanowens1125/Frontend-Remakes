@@ -1,8 +1,10 @@
+import { LIGHTGREENBG } from "../constants/backgroundClasses";
 import QuoteContent from "../ui/content/quote-content";
 import Instructors1 from "../ui/items/instructors/instructors1";
 import PageHeading2 from "../ui/page-headers/pageheader2";
 import FloatingLeftImgSBS from "../ui/sbs/floating-left-img";
 import Instructors1Header from "../ui/section-headers/instructors1header";
+import StatsTopBottom from "../ui/topbottom/stats-topbottom";
 import TopBottom from "../ui/topbottom/topbottom";
 
 export default function Page() {
@@ -33,6 +35,7 @@ export default function Page() {
         }
         bottom={<Instructors1 />}
       />
+      <StatsTopBottom sectionClasses={LIGHTGREENBG} />
     </>
   );
 }

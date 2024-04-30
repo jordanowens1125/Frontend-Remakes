@@ -1,7 +1,8 @@
+import { GREEN } from "@/app/constants/colors";
 import "./bars.scss";
 
 export default function Bars({
-  color,
+  color = GREEN,
   bars = [
     {
       title: "Hatha Yoga",
@@ -21,7 +22,6 @@ export default function Bars({
     },
   ],
 }) {
-
   const customList = [];
 
   for (let i = 0; i < bars.length; i++) {

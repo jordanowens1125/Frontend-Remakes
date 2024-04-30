@@ -3,11 +3,12 @@ import "./floating-left-img.scss";
 export default function FloatingLeftImgSBS({
   leftimg,
   right,
-  backgroundColorClass,
+  sectionClasses,
+  sectionID,
 }) {
   return (
     <>
-      <section className={backgroundColorClass}>
+      <section className={sectionClasses} id={sectionID}>
         <div className="container">
           <div className=" sbs-left">
             <img className="left" src={leftimg} alt="left image" />

@@ -2,6 +2,11 @@ import PageHeading1 from "../ui/page-headers/pageheader1";
 import TopBottom from "../ui/topbottom/topbottom";
 import Instructors2Header from "../ui/section-headers/instructors2header";
 import Instructors2 from "../ui/items/instructors/instructors2";
+import StandardSBS from "../ui/sbs/standard";
+import { LIGHTGREENBG } from "../constants/backgroundClasses";
+import Bars from "../ui/items/bars/bars";
+import { ORANGE } from "../constants/colors";
+import Content3 from "../ui/content/content3";
 
 export default function Page() {
   const instructorText =
@@ -9,7 +14,7 @@ export default function Page() {
 
   return (
     <>
-      <PageHeading1 heading={"Our Instructors 2"} />
+      <PageHeading1 header={"Our Instructors 2"} />
       <TopBottom
         top={
           <Instructors2Header
@@ -18,6 +23,11 @@ export default function Page() {
           />
         }
         bottom={<Instructors2 />}
+      />
+      <StandardSBS
+        left={<Content3 link={{ text: "We were in the press", route: "/" }} />}
+        right={<Bars color={ORANGE} />}
+        sectionClasses={LIGHTGREENBG}
       />
     </>
   );

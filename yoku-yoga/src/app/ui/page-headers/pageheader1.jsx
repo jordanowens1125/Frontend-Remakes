@@ -1,8 +1,8 @@
 import "./pageheader1.scss";
 
-export default function PageHeading1({
-  heading,
-  subheading,
+export default function PageHeader1({
+  header,
+  subheader,
   text,
   button,
   divider = false,
@@ -10,7 +10,7 @@ export default function PageHeading1({
   return (
     <section className="pageheader1">
       <div className="container">
-        <h1 className="header">{heading}</h1>
+        <h1 className="header">{header}</h1>
       </div>
     </section>
   );

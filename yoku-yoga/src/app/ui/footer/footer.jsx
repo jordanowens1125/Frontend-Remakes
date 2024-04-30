@@ -5,6 +5,7 @@ import {
   PINTEREST,
   TWITTER,
 } from "@/app/constants/icons";
+import './footer.scss'
 
 export default function Footer() {
   return (

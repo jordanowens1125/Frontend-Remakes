@@ -1,8 +1,8 @@
 import "./nogap.scss";
 
-export default function NoGapSBS({ left, right, backgroundColorClass }) {
+export default function NoGapSBS({ left, right, sectionClasses, sectionID }) {
   return (
-    <section className={backgroundColorClass}>
+    <section className={sectionClasses} id={sectionID}>
       <div className="container">
         <div className="nogap">
           <div className="left">{left}</div>

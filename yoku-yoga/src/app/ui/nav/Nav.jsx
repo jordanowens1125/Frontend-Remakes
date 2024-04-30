@@ -160,13 +160,11 @@ export default function Nav() {
                             <a href="/courselist1">Course List 1</a>
                             <a href="/courselist2">Course List 2</a>
                             <a href="/courselist3">Course List 3</a>
-                            <a href="/courselist4">Course List 4</a>
-                            <a href="/courselist5">Course List 5</a>
                           </div>
                         </div>
                       </span>
 
-                      <a href="/">Offline Classes</a>
+                      <a href="/courselist3">Offline Classes</a>
                     </div>
                   </div>
                 </div>
@@ -185,31 +183,6 @@ export default function Nav() {
                         className="back"
                         onClick={clearPrimary}
                       />
-                      <span
-                        className="c"
-                        onClick={(e) => setSecondary(e, TEAM)}
-                      >
-                        Team
-                        <div
-                          className={
-                            state.secondary == TEAM
-                              ? "dropdown active"
-                              : "dropdown"
-                          }
-                        >
-                          <div className="b">
-                            <img
-                              src={CANCEL}
-                              alt=""
-                              className="back"
-                              onClick={clearSecondary}
-                            />
-                            <a href="/team1">Team 1</a>
-                            <a href="/team2">Team 2</a>
-                            <a href="/team3">Team 3</a>
-                          </div>
-                        </div>
-                      </span>
 
                       <span
                         className="c"
@@ -230,23 +203,18 @@ export default function Nav() {
                               className="back"
                               onClick={clearSecondary}
                             />
-                            <a href="/">Contact 1</a>
-                            <a href="/">Contact 2</a>
-                            <a href="/">Contact 3</a>
+                            <a href="/contact1">Contact 1</a>
+                            <a href="/contact2">Contact 2</a>
+                            <a href="/contact3">Contact 3</a>
                           </div>
                         </div>
                       </span>
-
-                      <a href="/price">Price Table</a>
-                      <a href="/gallery">Gallery</a>
-                      <a href="/maintenance">Maintenance</a>
-                      <a href="/comingsoon">Coming Soon</a>
                       <a href="/404">404 Page</a>
                     </div>
                   </div>
                 </div>
 
-                <button className="view-button">View classes</button>
+                <a className="view-button btn-3" href="/courselist1">View classes</a>
               </div>
             </div>
             <div
