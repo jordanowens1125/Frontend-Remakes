@@ -17,6 +17,7 @@ const DARKLOGO = "dark-logo.png";
 const STAR = "star.svg";
 const BOOKMARK = "bookmark.svg";
 const PEOPLE = "people.svg";
+const BULB = "bulb.svg";
 // const FACEBOOK = "";
 // const FACEBOOK = "";
 // const FACEBOOK = "";
@@ -39,6 +40,7 @@ const PEOPLE = "people.svg";
 
 export {
   RIGHT,
+  BULB,
   BOOKMARK,
   CANCEL,
   LESSON,

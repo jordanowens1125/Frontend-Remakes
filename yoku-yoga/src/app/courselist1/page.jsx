@@ -5,9 +5,11 @@ export default function Page() {
   return (
     <>
       <PageHeader1 header={"Course List 1"} />
-      <div className="container">
-        <CourseList1 />
-      </div>
+      <section>
+        <div className="container">
+          <CourseList1 />
+        </div>
+      </section>
     </>
   );
 }

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <>
       <PageHeader1 header={"Course List 3"} />
-      
     </>
   );
 }
