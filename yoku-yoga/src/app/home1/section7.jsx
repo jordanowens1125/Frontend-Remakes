@@ -1,11 +1,13 @@
-import { LESSON } from "@/app/constants/icons";
+import FloatingRightSBS from "../ui/sbs/floating-right-img";
+import { LESSON } from "../constants/icons";
 
-export default function HomeSection7() {
+export default function HomeSection10() {
   return (
-    <section id="articles">
-      <div className="container">
-        <div className="sbs">
-          <div className="left">
+    <>
+      <FloatingRightSBS
+        sectionID={"articles"}
+        Left={
+          <>
             <h3 className="header">Inspired Articles</h3>
             <p className="text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
@@ -45,15 +47,11 @@ export default function HomeSection7() {
                 <img src={LESSON} alt="" /> Recipes
               </p>
             </div>
-          </div>
-          <div className="right">
-            <img
-              src="about-1/section-1.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+          </>
+        }
+        Rightimg={<img src="about1/section-1.png" alt="" />}
+        sectionID={"articles"}
+      />
+    </>
   );
 }

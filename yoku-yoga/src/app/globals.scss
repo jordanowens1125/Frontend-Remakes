@@ -74,7 +74,12 @@ section {
 
 .slider-section {
   margin-bottom: 100px;
-
+  .header {
+    font-size: 45px;
+    color: #227179;
+  }
+  p {
+  }
   .top {
     display: flex;
     flex-direction: column;
@@ -113,7 +118,7 @@ section {
     .top {
       max-width: 100%;
       display: grid;
-      grid-template-columns: 428px 1fr;
+      grid-template-columns: 2fr 1fr;
       grid-template-areas:
         "header ."
         "p arrows"

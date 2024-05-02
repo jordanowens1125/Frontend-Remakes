@@ -113,7 +113,7 @@ export default function HomeSection3() {
               <img src={RIGHT} alt="" />
             </button>
           </div>
-          <button>
+          <button className="btn-3">
             Browse All Classes <img src={RIGHT} alt="Arrow" />
           </button>
         </div>

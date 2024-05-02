@@ -3,8 +3,8 @@ import "./floating-left-img.scss";
 export default function FloatingLeftImgSBS({
   leftimg,
   right,
-  sectionClasses,
-  sectionID,
+  sectionClasses='',
+  sectionID='',
 }) {
   return (
     <>
