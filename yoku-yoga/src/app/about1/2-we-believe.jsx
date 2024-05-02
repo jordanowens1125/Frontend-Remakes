@@ -1,11 +1,15 @@
+import SectionHeader1 from "../ui/section-headers/sectionheader1";
+
 export default function Section2() {
   return (
     <section id="faith">
       <div className="container">
         <div className="sbs">
           <div className="left">
-            <h4 className="subheader-2">Our faith</h4>
-            <h3 className="header">We believe in making yoga inclusive</h3>
+            <SectionHeader1
+              header={"We believe in making yoga inclusive"}
+              subheader={"Our Faith"}
+            />
 
             <div className="items">
               <div className="item">

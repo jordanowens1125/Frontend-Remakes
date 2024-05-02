@@ -2,10 +2,16 @@
   background-image: url("../../../../public/pageheader-bgs/1.png");
   background-position: center;
   background-size: cover;
+  padding-top: 150px;
   .header {
     color: #227179;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 40px;
+  }
+  .subheader {
+    font-size: 25px;
+    color: #609199;
+    margin-top: 15px;
   }
   .container {
     display: flex;

@@ -1,0 +1,47 @@
+.contact-sbs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: #5e5e5e;
+  .item-h {
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    color: #383838;
+  }
+  p {
+    line-height: 1.7;
+  }
+  img {
+    width: 16px;
+  }
+
+  a {
+    display: flex;
+    gap: 12px;
+    padding-top: 16px;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  iframe {
+    min-height: 300px;
+  }
+  .contact-form {
+    text-align: left;
+    max-width: unset;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: 860px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+    iframe {
+      min-height: 450px;
+    }
+  }
+}

@@ -61,12 +61,12 @@ export default function Nav() {
     const st = window.scrollY || document.body.scrollTop;
     if (st > lastScrollTop) {
       // console.log("down");
-      if (st > 200) {
+      if (st > 100) {
         setShowBG(true);
       }
     } else if (st < lastScrollTop) {
       // console.log("up");
-      if (st < 200) {
+      if (st < 100) {
         setShowBG(false);
       }
     }
@@ -89,7 +89,8 @@ export default function Nav() {
                   className="cancel"
                   onClick={() => setState(clearState)}
                 />
-                <div className="a">
+                <a href="/"className="a">Home</a>
+                {/* <div className="a">
                   <span onClick={() => setState({ ...state, primary: HOME })}>
                     Home
                   </span>
@@ -110,7 +111,7 @@ export default function Nav() {
                       <a href="/">Home - Shop</a>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="a">
                   <span onClick={() => setPrimary(ABOUT)}>About Us</span>

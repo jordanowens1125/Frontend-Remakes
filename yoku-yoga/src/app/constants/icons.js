@@ -12,15 +12,15 @@ const TWITTER = "twitter.svg";
 const INSTAGRAM = "";
 const SKYPE = "skype.svg";
 const MAIL = "mail.svg";
-const PHONE = "";
+const PHONE = "phone.svg";
 const WHITELOGO = "white-logo.png";
 const DARKLOGO = "dark-logo.png";
 const STAR = "star.svg";
 const BOOKMARK = "bookmark.svg";
 const PEOPLE = "people.svg";
 const BULB = "bulb.svg";
-// const FACEBOOK = "";
-// const FACEBOOK = "";
+const POINTONMAP = "point-on-map.svg";
+const EMAIL = "email.svg";
 // const FACEBOOK = "";
 // const FACEBOOK = "";
 // const FACEBOOK = "";
@@ -42,6 +42,8 @@ const BULB = "bulb.svg";
 export {
   RIGHT,
   AVATAR,
+  POINTONMAP,
+  EMAIL,
   BULB,
   BOOKMARK,
   CANCEL,

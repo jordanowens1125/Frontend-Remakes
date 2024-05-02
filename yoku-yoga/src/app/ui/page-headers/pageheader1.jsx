@@ -11,6 +11,7 @@ export default function PageHeader1({
     <section className="pageheader1">
       <div className="container">
         <h1 className="header">{header}</h1>
+        {subheader && <p className="subheader">{subheader}</p>}
       </div>
     </section>
   );

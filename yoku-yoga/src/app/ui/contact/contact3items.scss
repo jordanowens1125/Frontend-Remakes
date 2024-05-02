@@ -1,0 +1,35 @@
+.contact3items {
+  .item {
+    display: flex;
+    flex-direction: column;
+    iframe {
+      min-height: 500px;
+      width: 100%;
+    }
+    .info {
+      padding: 80px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .city {
+        font-weight: 800;
+        padding-bottom: 15px;
+        padding-right: 8px;
+        border-bottom: 4px white solid;
+        width: fit-content;
+        font-size: 28px;
+      }
+      p {
+        line-height: 1.7;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
