@@ -1,9 +1,10 @@
-.courselist2 {
-  gap: 24px;
+.courselist4 {
+  gap: 160px;
   .item {
     display: flex;
     flex-direction: column;
     gap: 0;
+    position: relative;
     .img-container {
       position: relative;
       overflow: hidden;
@@ -68,14 +69,19 @@
     .info {
       padding: 24px;
       background-color: var(--white);
+      position: absolute;
+      top: 85%;
+      left: 0;
+      right: 0;
+      width: 80%;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       span {
         display: flex;
         align-items: center;
         gap: 4px;
         color: #a2a2a2;
-        p {
-          color: #227179;
-        }
       }
       .title {
         font-size: 22px;
@@ -90,13 +96,20 @@
       }
     }
   }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 768px) {
+    gap: 40px;
     display: grid;
+    row-gap: 190px;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    margin-bottom: 100px;
   }
   @media screen and (min-width: 1024px) {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 275px;
+    margin-bottom: 200px;
+  }
+  @media screen and (min-width: 1440px) {
+    row-gap: 200px;
   }
 }

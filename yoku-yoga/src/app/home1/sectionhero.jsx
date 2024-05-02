@@ -2,7 +2,7 @@ export default function HomeSection1() {
   return (
     <section className="hero" id="hero">
       <div className="left">
-        <div className="heading">
+        <div className="header">
           <span>Online</span>
           <h1>Yoga Classes</h1>
         </div>

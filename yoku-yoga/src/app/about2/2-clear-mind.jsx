@@ -9,8 +9,8 @@ export default function About2Section2() {
       left={
         <Content1
           image={"about2/section4-icon.png"}
-          subheading={"What keeps pushing us"}
-          heading={"Clear Mind & Body"}
+          subheader={"What keeps pushing us"}
+          header={"Clear Mind & Body"}
           text={text}
         />
       }

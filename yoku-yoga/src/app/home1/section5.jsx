@@ -104,11 +104,11 @@ export default function HomeSection5() {
     { img: "", name: "Lori Mendoza", classes: 2 },
     { img: "", name: "Crystal Gibson", classes: 2 },
   ];
-  const headingText = "Our Instructors";
+  const headerText = "Our Instructors";
   const sectionText =
     "A meditative means of discovering dysfunctional perception and cognition, as well as overcoming it to release any suffering, find inner peace and salvation.";
   return (
-    // <Slider sectionHead={headingText} sectionText={sectionText}
+    // <Slider sectionHead={headerText} sectionText={sectionText}
     //   items={items}
     //   ItemElement={<Section5ItemElement/>}
     // />
@@ -116,7 +116,7 @@ export default function HomeSection5() {
       <section id="instructors" className="slider-section">
         <div className="container">
           <div className="top">
-            <h2 className="heading">{headingText}</h2>
+            <h2 className="header">{headerText}</h2>
             <p>{sectionText}</p>
             <div className="arrows">
               <button onClick={downOne}>

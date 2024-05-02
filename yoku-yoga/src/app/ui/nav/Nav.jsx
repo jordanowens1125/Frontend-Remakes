@@ -5,9 +5,8 @@ import "./nav.scss";
 import { useState } from "react";
 
 export default function Nav() {
-  const [active, setActive] = useState(false);
+  const [showBG, setShowBG] = useState(false);
 
-  const [home, setHome] = useState(false);
   const clearState = {
     active: false,
     primary: false,
@@ -18,6 +17,10 @@ export default function Nav() {
     if (window.innerWidth < 1000) {
       setState({ ...state, primary: false, secondary: false });
     }
+  };
+
+  const clearAll = () => {
+    setState(clearState);
   };
 
   const clearSecondary = (e) => {
@@ -40,17 +43,7 @@ export default function Nav() {
     }
   };
 
-  const [
-    HOME,
-    CLASSES,
-    ABOUT,
-    PAGES,
-    CLASSLIST,
-    CONTACT,
-    TEAM,
-    TEAMLIST,
-    CONTACTLIST,
-  ] = [
+  const [HOME, CLASSES, ABOUT, PAGES, CLASSLIST, CONTACT] = [
     "HOME",
     "CLASSES",
     "ABOUT",
@@ -61,9 +54,28 @@ export default function Nav() {
     "TEAMLIST",
     "CONTACTLIST",
   ];
+
+  let lastScrollTop = 0;
+
+  window.addEventListener("scroll", () => {
+    const st = window.scrollY || document.body.scrollTop;
+    if (st > lastScrollTop) {
+      // console.log("down");
+      if (st > 200) {
+        setShowBG(true);
+      }
+    } else if (st < lastScrollTop) {
+      // console.log("up");
+      if (st < 200) {
+        setShowBG(false);
+      }
+    }
+    lastScrollTop = st;
+  });
+
   return (
     <>
-      <nav>
+      <nav className={showBG ? "show-bg" : ""}>
         <div className="container">
           <a href="/" className="logo">
             <img src={DARKLOGO} alt="" />
@@ -164,7 +176,7 @@ export default function Nav() {
                         </div>
                       </span>
 
-                      <a href="/courselist3">Offline Classes</a>
+                      <a href="/courselist4">Offline Classes</a>
                     </div>
                   </div>
                 </div>
@@ -214,7 +226,9 @@ export default function Nav() {
                   </div>
                 </div>
 
-                <a className="view-button btn-3" href="/courselist1">View classes</a>
+                <a className="view-button btn-3" href="/courselist1">
+                  View classes
+                </a>
               </div>
             </div>
             <div
@@ -230,7 +244,7 @@ export default function Nav() {
           </div>
         </div>
       </nav>
-      <div className="modal"></div>
+      {state.active && <div className="modal" onClick={clearAll}></div>}
     </>
   );
 }

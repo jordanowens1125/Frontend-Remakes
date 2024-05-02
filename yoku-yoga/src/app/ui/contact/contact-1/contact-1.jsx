@@ -2,12 +2,12 @@ import ContactItems from "./items";
 import ContactForm from "../form";
 import FullMap from "./fullmap";
 import Links from "../links";
-import ContactHeading from "./contact-heading";
+import ContactHeader from "./contact-header";
 
 export default function ContactSection1() {
   return (
     <div className="contact contact-1">
-      <ContactHeading />
+      <ContactHeader />
       <ContactItems />
       <ContactForm />
       <FullMap />

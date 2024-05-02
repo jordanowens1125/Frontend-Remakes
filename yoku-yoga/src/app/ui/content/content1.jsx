@@ -1,8 +1,8 @@
 import { RIGHT } from "@/app/constants/icons";
 import "./content1.scss";
 export default function Content1({
-  subheading,
-  heading,
+  subheader,
+  header,
   text,
   buttons = [],
   image,
@@ -11,8 +11,8 @@ export default function Content1({
     <>
       <div className="content1">
         {image && <img src={image} alt="" className="icon"/>}
-        {subheading && <span className="subheading">{subheading}</span>}
-        {heading && <h3 className="heading">{heading}</h3>}
+        {subheader && <span className="subheader">{subheader}</span>}
+        {header && <h3 className="header">{header}</h3>}
         {text && <p>{text}</p>}
         <div className="buttons">
           {buttons.map((button) => (

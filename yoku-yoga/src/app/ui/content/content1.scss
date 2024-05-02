@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  .subheading {
+  .subheader {
     font-size: 25px;
     font-weight: 400;
     color: #3dbca8;
@@ -11,7 +11,7 @@
     display: block;
     width: fit-content;
   }
-  .subheading::after {
+  .subheader::after {
     content: "";
     left: 100%;
     margin-left: 20px;
@@ -22,7 +22,7 @@
     width: 65px;
     background-color: #dbe8e7;
   }
-  .heading {
+  .header {
     font-size: 43px;
     font-weight: 600;
     color: rgb(34, 113, 121);

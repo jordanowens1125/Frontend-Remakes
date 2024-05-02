@@ -4,8 +4,8 @@ export default function Section2() {
       <div className="container">
         <div className="sbs">
           <div className="left">
-            <h4 className="subheading-2">Our faith</h4>
-            <h3 className="heading">We believe in making yoga inclusive</h3>
+            <h4 className="subheader-2">Our faith</h4>
+            <h3 className="header">We believe in making yoga inclusive</h3>
 
             <div className="items">
               <div className="item">

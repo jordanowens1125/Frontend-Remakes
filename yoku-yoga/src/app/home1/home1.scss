@@ -15,7 +15,7 @@
     flex-direction: column;
     gap: 1.5rem;
     width: 80%;
-    .heading {
+    .header {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
@@ -54,7 +54,7 @@
     .item {
       display: grid;
       grid-template-areas:
-        "img heading"
+        "img header"
         "img .";
       grid-template-columns: 60px 1fr;
       row-gap: 1rem;
@@ -65,7 +65,7 @@
         height: fit-content;
       }
       .item-h {
-        grid-area: heading;
+        grid-area: header;
         font-size: 25px;
         font-weight: 600;
         color: #227179;

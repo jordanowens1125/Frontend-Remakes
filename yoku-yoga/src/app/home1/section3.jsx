@@ -99,7 +99,7 @@ export default function HomeSection3() {
     <section id="classes" className="slider-section">
       <div className="container">
         <div className="top">
-          <h2 className="heading">Popular Online Classes</h2>
+          <h2 className="header">Popular Online Classes</h2>
           <p>
             A meditative means of discovering dysfunctional perception and
             cognition, as well as overcoming it to release any suffering, find

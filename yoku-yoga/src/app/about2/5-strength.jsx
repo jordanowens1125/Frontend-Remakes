@@ -9,8 +9,8 @@ export default function About2Section5() {
     <StandardSBS
       left={
         <Content1
-          subheading={"Yoku's Strength"}
-          heading={"Our Expertise"}
+          subheader={"Yoku's Strength"}
+          header={"Our Expertise"}
           text={text}
         />
       }

@@ -12,8 +12,8 @@ export default function Section1() {
           leftimg={"about1/section-1.png"}
           right={
             <Content1
-              subheading={"About our school"}
-              heading={"How we became Yoku"}
+              subheader={"About our school"}
+              header={"How we became Yoku"}
               text={text}
               buttons={[
                 {

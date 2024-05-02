@@ -18,9 +18,11 @@
     display: none;
   }
   .tab-option {
-    display: none;
+    transition: 0.3s;
     flex-direction: column;
     gap: 24px;
+    display: none;
+    opacity: 0;
   }
 
   .tab-content {
@@ -28,36 +30,15 @@
       color: #4f7870;
     }
     .green {
-      color: rgb(79, 120, 112);
-      text-indent: 20px;
       color: #3dbca8;
       position: relative;
-      &::before {
-        position: absolute;
-        top: 8%;
-        content: "";
-        display: block;
-        height: 10px;
-        aspect-ratio: 1;
-        border: 2px solid #3dbca8;
-        border-radius: 50%;
-      }
-      &::after {
-        position: absolute;
-        content: "";
-        top: 11%;
-        aspect-ratio: 1;
-        height: 5px;
-        background-color: #3dbca8;
-        border-radius: 50%;
-        left: 1%;
-      }
     }
   }
 
   input[type="radio"]:nth-of-type(1):checked {
     ~ .tab-content .tab-option:nth-of-type(1) {
       display: flex;
+      opacity: 1;
     }
     ~ .tabs label:nth-of-type(1) {
       color: #227179;
@@ -67,6 +48,7 @@
   input[type="radio"]:nth-of-type(2):checked {
     ~ .tab-content .tab-option:nth-of-type(2) {
       display: flex;
+      opacity: 1;
     }
     ~ .tabs label:nth-of-type(2) {
       color: #227179;
@@ -76,6 +58,7 @@
   input[type="radio"]:nth-of-type(3):checked {
     ~ .tab-content .tab-option:nth-of-type(3) {
       display: flex;
+      opacity: 1;
     }
     ~ .tabs label:nth-of-type(3) {
       color: #227179;
@@ -85,6 +68,7 @@
   input[type="radio"]:nth-of-type(4):checked {
     ~ .tab-content .tab-option:nth-of-type(4) {
       display: flex;
+      opacity: 1;
     }
     ~ .tabs label:nth-of-type(4) {
       color: #227179;
@@ -94,6 +78,7 @@
   input[type="radio"]:nth-of-type(5):checked {
     ~ .tab-content .tab-option:nth-of-type(5) {
       display: flex;
+      opacity: 1;
     }
     ~ .tabs label:nth-of-type(5) {
       color: #227179;
@@ -103,14 +88,80 @@
   input[type="radio"]:nth-of-type(6):checked {
     ~ .tab-content .tab-option:nth-of-type(6) {
       display: flex;
+      opacity: 1;
     }
     ~ .tabs label:nth-of-type(6) {
       color: #227179;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 850px) {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 1.5fr;
+    gap: 0;
+    .tabs {
+      gap: 0;
+      position: relative;
+      justify-content: space-between;
+    }
+    .tabs label {
+      width: 100%;
+      padding-right: 50px;
+      padding: 30px 50px 30px 0;
+    }
+    .tabs label:hover {
+      cursor: pointer;
+    }
+
+    .tab-content {
+      padding-left: 50px;
+      padding-top: 30px;
+      padding-bottom: 50px;
+      border-left: 3px solid #ebebeb;
+      position: relative;
+      min-height: 550px;
+      .green {
+        text-indent: 20px;
+      }
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0;
+        left: -2px;
+        width: 2px;
+        height: 16%;
+        background-color: #3dbca8;
+        transition: 0.4s;
+      }
+    }
+
+    input[type="radio"]:nth-of-type(2):checked ~ .tab-content::after,
+    label:nth-of-type(2):hover {
+      top: 16%;
+    }
+
+    input[type="radio"]:nth-of-type(3):checked ~ .tab-content::after,
+    label:nth-of-type(3):hover {
+      top: 32%;
+    }
+
+    input[type="radio"]:nth-of-type(4):checked ~ .tab-content::after,
+    label:nth-of-type(4):hover {
+      top: 48%;
+    }
+
+    input[type="radio"]:nth-of-type(5):checked ~ .tab-content::after,
+    label:nth-of-type(5):hover {
+      top: 64%;
+    }
+
+    input[type="radio"]:nth-of-type(6):checked ~ .tab-content::after,
+    label:nth-of-type(6):hover {
+      top: 85%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
   }
 }

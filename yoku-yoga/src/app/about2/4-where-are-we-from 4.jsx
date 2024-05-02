@@ -11,8 +11,8 @@ export default function About2Section4() {
         right={
           <Content1
             image={"about2/section4-icon.png"}
-            subheading={"Where are we from"}
-            heading={"Group of Yoga Experts"}
+            subheader={"Where are we from"}
+            header={"Group of Yoga Experts"}
             text={text}
             buttons={[{ class: "btn-8", text: "Browse Courses", right: true }]}
           />

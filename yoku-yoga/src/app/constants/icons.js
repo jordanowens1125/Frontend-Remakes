@@ -1,4 +1,5 @@
 const ACCOUNT = "account.svg";
+const AVATAR = "avatar.jpg";
 const CANCEL = "cancel.svg";
 const RIGHT = "right.svg";
 const SEND = "send.svg";
@@ -40,6 +41,7 @@ const BULB = "bulb.svg";
 
 export {
   RIGHT,
+  AVATAR,
   BULB,
   BOOKMARK,
   CANCEL,

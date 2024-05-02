@@ -9,8 +9,8 @@ export default function HomeSection4() {
       leftimg={"home1/section4.png"}
       right={
         <Content2
-          subheading={"our foundation is"}
-          heading={"Modern Yoga"}
+          subheader={"our foundation is"}
+          header={"Modern Yoga"}
           text={text}
           buttons={[
             { text: "Learn More", class: "btn-4" },

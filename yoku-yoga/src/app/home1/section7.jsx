@@ -6,7 +6,7 @@ export default function HomeSection7() {
       <div className="container">
         <div className="sbs">
           <div className="left">
-            <h3 className="heading">Inspired Articles</h3>
+            <h3 className="header">Inspired Articles</h3>
             <p className="text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatibus natus rerum labore sequi in quis pariatur dolor,

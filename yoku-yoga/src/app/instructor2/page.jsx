@@ -1,4 +1,4 @@
-import PageHeading1 from "../ui/page-headers/pageheader1";
+import PageHeader1 from "../ui/page-headers/pageheader1";
 import TopBottom from "../ui/topbottom/topbottom";
 import Instructors2Header from "../ui/section-headers/instructors2header";
 import Instructors2 from "../ui/items/instructors/instructors2";
@@ -14,7 +14,7 @@ export default function Page() {
 
   return (
     <>
-      <PageHeading1 header={"Our Instructors 2"} />
+      <PageHeader1 header={"Our Instructors 2"} />
       <TopBottom
         top={
           <Instructors2Header

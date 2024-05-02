@@ -11,7 +11,7 @@ export default function HomeSection8() {
     items.style.marginLeft = margin ? `${-margin - 40}px` : "0px";
   };
 
-  const headingText = "Testimonials";
+  const headerText = "Testimonials";
   const sectionText = "What people say about us";
 
   const [touchStart, setTouchStart] = useState(null);
@@ -59,7 +59,7 @@ export default function HomeSection8() {
     <section id="testimonials" className="slider-section">
       <div className="container">
         <div className="top">
-          <h2 className="heading">{headingText}</h2>
+          <h2 className="header">{headerText}</h2>
           <p>{sectionText}</p>
           <div className="arrows">
             <button onClick={downOne}>

@@ -1,0 +1,112 @@
+.courselist3 {
+  gap: 24px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: #a2a2a2;
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      grid-area: info;
+    }
+
+    .title {
+      font-size: 31px;
+      font-weight: 700;
+      color: #545454;
+      line-height: 1.2;
+      grid-area: title;
+    }
+    .price {
+      color: var(--white);
+      background-color: #3dbca8;
+      width: fit-content;
+      width: 75px;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 25px;
+      font-weight: 700;
+      grid-area: price;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-weight: 600;
+      .detail {
+        color: #3dbca8;
+      }
+    }
+
+    .text {
+      color: #5e5e5e;
+      grid-area: text;
+    }
+
+    .instructor {
+      display: grid;
+      grid-template-areas:
+        "img teacher"
+        "img name";
+      grid-template-columns: min-content 1fr;
+      gap: 16px;
+      row-gap: 0;
+      .teacher {
+        color: #5e5e5e;
+      }
+      .name {
+        color: #3dbca8;
+        font-weight: 600;
+        grid-area: name;
+      }
+      img {
+        grid-area: img;
+        width: 48px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 80px;
+    .item {
+      flex-direction: row;
+      gap: 32px;
+      grid-template-columns: 50px 1fr;
+      grid-template-rows: 1fr;
+      .course-img {
+        width: 372px;
+        height: fit-content;
+      }
+      .info {
+        padding: 20px 0;
+        justify-content: space-between;
+        height: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+          "title price"
+          "info  price"
+          "text  text"
+          "instructor instructor";
+        grid-template-columns: 1fr min-content;
+      }
+      .price {
+        margin-right: 0;
+        margin-left: auto;
+      }
+      .details {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}

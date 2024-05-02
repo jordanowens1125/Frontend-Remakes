@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
 
             <div className="quicklinks">
-              <p className="footer-heading">Quick Links</p>
+              <p className="footer-header">Quick Links</p>
               <div className="items">
                 <a href="/pricing">Pricing</a>
                 <a href="/pricing">Become Instructor</a>
@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
 
             <div className="contact">
-              <p className="footer-heading">Contact Info</p>
+              <p className="footer-header">Contact Info</p>
               <div className="address">
                 <p>1810 King Way</p>
                 <p>King Street, 5th Avenue, New York</p>

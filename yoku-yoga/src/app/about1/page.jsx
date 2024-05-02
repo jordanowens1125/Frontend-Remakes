@@ -8,7 +8,7 @@ import PageHeader2 from "../ui/page-headers/pageheader2";
 export default function Page() {
   return (
     <>
-      <PageHeader2 heading={"About"} />
+      <PageHeader2 header={"About"} />
       <Section1 />
       <Section2 />
       <Section3 />

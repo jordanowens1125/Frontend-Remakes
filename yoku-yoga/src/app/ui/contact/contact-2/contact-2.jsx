@@ -1,11 +1,11 @@
-import ContactHeading from "../contact-1/contact-heading";
+import ContactHeader from "../contact-1/contact-header";
 import ContactForm from "../form";
 import Links from "../links";
 
 export default function ContactSection2() {
   return (
     <section className="contact contact-2">
-      <ContactHeading />
+      <ContactHeader />
       <div className="sbs container">
         <div className="left">
           <p className="section-h">Leave us your info</p>

@@ -1,7 +1,12 @@
 .nogap {
   .content1 {
-    padding: 60px;
+    padding: 24px;
     background-color: #e8f6f6;
     height: 100%;
+  }
+  @media screen and (min-width:768px){
+    .content1{
+      padding: 60px;
+    }
   }
 }

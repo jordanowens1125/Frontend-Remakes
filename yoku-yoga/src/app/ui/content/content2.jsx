@@ -1,7 +1,7 @@
 import "./content2.scss";
 export default function Content2({
-  subheading,
-  heading,
+  subheader,
+  header,
   text,
   buttons = [],
   image,
@@ -10,8 +10,8 @@ export default function Content2({
     <>
       <div className="content2">
         {image && <img src={image} alt="" />}
-        {subheading && <span className="subheading">{subheading}</span>}
-        {heading && <h3 className="heading">{heading}</h3>}
+        {subheader && <span className="subheader">{subheader}</span>}
+        {header && <h3 className="header">{header}</h3>}
         {text && <p>{text}</p>}
         <div className="buttons">
           {buttons.map((button) => (

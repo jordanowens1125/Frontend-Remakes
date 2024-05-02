@@ -13,8 +13,8 @@ export default function Page() {
   return (
     <>
       <PageHeader2
-        heading={"About Our School"}
-        subheading={"our Story"}
+        header={"About Our School"}
+        subheader={"our Story"}
         text={text}
         button={{ text: "Meet Instructors", class: "btn-9" }}
         divider={true}
