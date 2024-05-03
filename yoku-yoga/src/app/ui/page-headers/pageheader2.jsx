@@ -13,7 +13,11 @@ export default function PageHeader2({
         {subheader && <span className="subheader">{subheader}</span>}
         {header && <h1 className="header">{header}</h1>}
         {text && <p className="text">{text}</p>}
-        {button && <button className={button.class}>{button.text}</button>}
+        {button && (
+          <a className={button.class} href={button.link}>
+            {button.text}
+          </a>
+        )}
         {divider && <span className="divider"></span>}
       </div>
     </section>

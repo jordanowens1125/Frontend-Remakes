@@ -2,14 +2,12 @@
 
 import { DARKLOGO } from "@/app/constants/icons";
 import "./nav.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AccountSVGComponent from "@/app/icons/account";
 import { WHITE } from "@/app/constants/colors";
 import CancelSvgComponent from "@/app/icons/cancel";
 
 export default function Nav() {
-  const [showBG, setShowBG] = useState(false);
-
   const clearState = {
     active: false,
     primary: false,
@@ -59,47 +57,28 @@ export default function Nav() {
     "CONTACTLIST",
   ];
 
-  let lastScrollTop = 0;
-
-  window.addEventListener("scroll", () => {
-    handleScroll();
-  });
-
-  const handleScroll = debounce(() => {
-    const st = window.scrollY || document.body.scrollTop;
-    if (st > lastScrollTop) {
-      // console.log("down");
-      if (st > 100) {
-        setShowBG(true);
-      }
-    } else if (st < lastScrollTop) {
-      // console.log("up");
-      if (st < 100) {
-        setShowBG(false);
+  useEffect(() => {
+    const headerObserver = new IntersectionObserver(updateNav, {
+      root: null,
+      threshold: 0,
+      rootMargin: `200px`,
+    });
+    function updateNav(entries) {
+      console.log(1);
+      const [entry] = entries;
+      const Nav = document.getElementById("nav");
+      if (!entry.isIntersecting) {
+        Nav.classList.add("show-bg");
+      } else {
+        Nav.classList.remove("show-bg");
       }
     }
-    lastScrollTop = st;
-  }, 500);
-
-  function debounce(func, wait, immediate) {
-    let timeout = null;
-    return function () {
-      const context = this,
-        args = arguments;
-      const later = function () {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      const callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  }
+    headerObserver.observe(document.getElementById("top"));
+  }, []);
 
   return (
     <>
-      <nav className={showBG ? "show-bg" : ""}>
+      <nav id="nav">
         <div className="container">
           <a href="/" className="logo">
             <img src={DARKLOGO} alt="" />

@@ -12,6 +12,7 @@ export default function About2Section2() {
           subheader={"What keeps pushing us"}
           header={"Clear Mind & Body"}
           text={text}
+          link={"/instructors2"}
         />
       }
       right={<img src="about2/section2.jpg" />}

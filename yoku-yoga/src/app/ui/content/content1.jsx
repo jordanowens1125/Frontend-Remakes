@@ -17,10 +17,10 @@ export default function Content1({
         {text && <p>{text}</p>}
         <div className="buttons">
           {buttons.map((button) => (
-            <button className={button.class} key={button.text}>
+            <a className={button.class} key={button.text} href={button.link}>
               {button.text}
-              {button.right && <RightArrowSvgComponent/>}
-            </button>
+              {button.right && <RightArrowSvgComponent />}
+            </a>
           ))}
         </div>
       </div>

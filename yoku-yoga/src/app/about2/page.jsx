@@ -16,7 +16,7 @@ export default function Page() {
         header={"About Our School"}
         subheader={"our Story"}
         text={text}
-        button={{ text: "Meet Instructors", class: "btn-9" }}
+        button={{ text: "Meet Instructors", class: "btn-9", link:'/instructor2' }}
         divider={true}
       />
       <About2Section2 />

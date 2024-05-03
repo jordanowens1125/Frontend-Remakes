@@ -11,14 +11,14 @@ export default function Contact1Items({
       icon: <PhoneSvgComponent fill="transparent" />,
       title: "Phone",
       text: "A wonderful serenity has taken possession of my entire soul, like these.",
-      link: "",
+      link: "tel:555-555-5555",
       linkText: "+1-2345-2345",
     },
     {
       icon: <EmailSvgComponent fill="transparent" />,
       title: "Email",
       text: "A wonderful serenity has taken possession of my entire soul, like these.",
-      link: "",
+      link: "mailto:jordanowens1125@gmail.com",
       linkText: "Contact@goodlayers.com",
     },
     {

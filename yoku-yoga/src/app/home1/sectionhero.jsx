@@ -12,7 +12,7 @@ export default function HomeSection1() {
             Yoka is the most popular online platform for yoga classes. Trusted
             by 100,000+ customers. Our instructors are well-known and certified.
           </p>
-          <a className="btn-9">Browse Courses</a>
+          <a className="btn-9" href="/courselist1">Browse Courses</a>
         </div>
         <div className="right">
           <img src="home1/hero.png" alt="" />

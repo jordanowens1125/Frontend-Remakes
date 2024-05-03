@@ -14,7 +14,14 @@ export default function About2Section4() {
             subheader={"Where are we from"}
             header={"Group of Yoga Experts"}
             text={text}
-            buttons={[{ class: "btn-8", text: "Browse Courses", right: true }]}
+            buttons={[
+              {
+                class: "btn-8",
+                text: "Browse Courses",
+                right: true,
+                link: "/courselist2",
+              },
+            ]}
           />
         }
       />

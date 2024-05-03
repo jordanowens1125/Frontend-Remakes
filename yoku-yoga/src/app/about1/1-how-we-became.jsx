@@ -17,6 +17,7 @@ export default function Section1() {
                 {
                   class: "btn-9",
                   text: "Meet instructors",
+                  link:'/instructor1'
                 },
               ]}
             />

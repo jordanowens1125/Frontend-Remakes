@@ -1,3 +1,4 @@
+import { link } from "fs";
 import Content2 from "../ui/content/content2";
 import FloatingLeftImgSBS from "../ui/sbs/floating-left-img";
 
@@ -13,8 +14,8 @@ export default function HomeSection4() {
           header={"Modern Yoga"}
           text={text}
           buttons={[
-            { text: "Learn More", class: "btn-4" },
-            { text: "Our Story", class: "btn-5" },
+            { text: "Learn More", class: "btn-4", link: "/about1" },
+            { text: "Our Story", class: "btn-5", link: "/about2" },
           ]}
         />
       }

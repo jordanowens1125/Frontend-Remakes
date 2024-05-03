@@ -15,11 +15,11 @@ export default function Contact2Section() {
             <p className="item-h">Location</p>
             <p>4 apt. Flawing Street. The Grand Avenue.</p>
             <p>Liverpool, UK 33342</p>
-            <a href="">
+            <a href="mailto:jordanowens1125@gmail.com">
               <EmailSvgComponent fill="transparent" />
               contact@infinitewptheme.com
             </a>
-            <a href="">
+            <a href="tel:555-555-5555">
               <PhoneSvgComponent fill="transparent" />
               +1-3524-3356
             </a>

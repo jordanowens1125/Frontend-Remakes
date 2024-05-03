@@ -25,8 +25,8 @@ export default function Contact3Items() {
           <div className={`info ${DARKGREENBG}`}>
             <p className="city">{item.city}</p>
             <p>{item.text}</p>
-            <a href="">Tel:{item.telephone}</a>
-            <a href="">Email: {item.email}</a>
+            <a href="tel:555-555-5555">Tel:{item.telephone}</a>
+            <a href="mailto:jordanowens1125@gmail.com">Email: {item.email}</a>
           </div>
           <iframe
             src={item.map}

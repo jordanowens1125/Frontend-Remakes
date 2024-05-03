@@ -14,7 +14,7 @@ export default function StatsHeader({
     <div className="statsheader">
       <h3 className="header">{header}</h3>
       <p>{text}</p>
-      <a href="/courselist1" className={link.buttonClass}>
+      <a href={link.href} className={link.buttonClass}>
         {link.text}
       </a>
     </div>

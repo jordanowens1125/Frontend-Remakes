@@ -8,7 +8,7 @@ export default function Socials({ sectionID, classes }) {
   return (
     <section className={classes} id={sectionID}>
       <div className="container contact-link-icons">
-        <a href="/">
+        <a href="mailto:jordanowens1125@gmail.com">
           <EmailSvgComponent fill="transparent" />
         </a>
         <a href="/">
@@ -18,7 +18,6 @@ export default function Socials({ sectionID, classes }) {
           <img src="linkedin.svg" alt="" />
         </a> */}
         <a href="/">
-          <img src="skype.svg" alt="" />
           <SkypeSvgComponent />
         </a>
         <a href="/">

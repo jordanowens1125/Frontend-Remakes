@@ -15,9 +15,9 @@ export default function Content2({
         {text && <p>{text}</p>}
         <div className="buttons">
           {buttons.map((button) => (
-            <button className={button.class} key={button.text}>
+            <a className={button.class} key={button.text} href={button.link}>
               {button.text}
-            </button>
+            </a>
           ))}
         </div>
       </div>

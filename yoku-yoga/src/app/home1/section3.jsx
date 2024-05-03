@@ -114,9 +114,9 @@ export default function HomeSection3() {
               <RightArrowSvgComponent />
             </button>
           </div>
-          <button className="btn-3">
+          <a className="btn-3" href="/courselist2">
             Browse All Classes <RightArrowSvgComponent />
-          </button>
+          </a>
         </div>
 
         <div
