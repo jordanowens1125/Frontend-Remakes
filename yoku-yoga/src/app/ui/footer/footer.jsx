@@ -27,7 +27,7 @@ export default function Footer() {
               <p className="footer-header">Quick Links</p>
               <div className="items">
                 {/* <a href="/">Pricing</a> */}
-                <a href="/instructors1">Become Instructor</a>
+                <a href="/instructor1">Become Instructor</a>
                 <a href="/courselist1">Courses</a>
                 <a href="/contact1">Contact Us</a>
                 <a href="/faq">FAQ</a>
