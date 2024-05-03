@@ -148,7 +148,7 @@ export default function HomeSection5() {
             </div>
 
             {INSTRUCTORS.map((item) => (
-              <div className="item">
+              <div className="item" key={item.name}>
                 <div className="img-container">
                   <img src={item.image} alt={item.name} />
                 </div>

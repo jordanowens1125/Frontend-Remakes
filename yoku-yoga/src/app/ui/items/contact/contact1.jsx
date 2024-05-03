@@ -35,7 +35,7 @@ export default function Contact1Items({
       <div className="container">
         <div className="items contact1-items">
           {items.map((item) => (
-            <div className="item">
+            <div className="item" key={item.title}>
               {item.icon}
               <p className="item-h">{item.title}</p>
               <p className="text">{item.text}</p>

@@ -100,7 +100,7 @@ export default function CourseList2({
   return (
     <div className="items courselist2">
       {classes.map((item) => (
-        <div className="item">
+        <div className="item" key={item.name}>
           <div className="img-container">
             <img src={item.image} alt={item.event} className="display" />
             <div className="content">

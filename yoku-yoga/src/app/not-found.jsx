@@ -5,7 +5,7 @@ export default function Page() {
       <div className="container">
         <h1>404</h1>
         <h3>Page Not Found</h3>
-        <p>Sorry, we couldn't find the page you're looking for.</p>
+        <p>Sorry, we could not find the page you are looking for.</p>
         <a href="/">Back to homepage</a>
       </div>
     </section>

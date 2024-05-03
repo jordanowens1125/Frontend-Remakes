@@ -26,7 +26,7 @@ export default function Features1({
       <div className="container">
         <div className="items features1">
           {items.map((item) => (
-            <div className="item">
+            <div className="item" key={item.title}>
               <img src={item.image} alt="Feature 1" />
               <p className="item-h">{item.title}</p>
               <p className="item-info">{item.info}</p>

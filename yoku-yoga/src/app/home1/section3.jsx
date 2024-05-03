@@ -149,7 +149,7 @@ export default function HomeSection3() {
           </div>
 
           {CLASSES.map((item) => (
-            <div className="item">
+            <div className="item" key={item.title}>
               <div className="img-container">
                 <img src={item.image} alt={item.title} />
                 {/* <div className="content-items">

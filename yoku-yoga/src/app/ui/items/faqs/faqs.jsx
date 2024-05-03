@@ -40,12 +40,12 @@ export default function FAQS({ questions }) {
             yoga
           </p>
           <p className="green">
-            In Remski’s view, along comes “Goldberg with a dozen years of dogged
+            In Remskis view, along comes “Goldberg with a dozen years of dogged
             research, a sleuthing style
           </p>
           <p>
             Yoga has traditionally referred to both a school of philosophy and
-            many paths for an individual’s soteriological and spiritual
+            many paths for an individuals soteriological and spiritual
             practice. These historical texts mention asanas, but the posture
             practice is but one step.
           </p>
@@ -124,12 +124,12 @@ export default function FAQS({ questions }) {
             yoga
           </p>
           <p className="green">
-            In Remski’s view, along comes “Goldberg with a dozen years of dogged
+            In Remski view, along comes “Goldberg with a dozen years of dogged
             research, a sleuthing style
           </p>
           <p>
             Yoga has traditionally referred to both a school of philosophy and
-            many paths for an individual’s soteriological and spiritual
+            many paths for an individuals soteriological and spiritual
             practice. These historical texts mention asanas, but the posture
             practice is but one step.
           </p>
@@ -147,14 +147,14 @@ export default function FAQS({ questions }) {
             Class Variety: We offer a diverse range of classes, including Hatha,
             Vinyasa, Yin, Power, Restorative, and Meditation, to cater to
             different preferences and needs. Our classes range from
-            beginner-friendly sessions to advanced practices, ensuring there's
+            beginner-friendly sessions to advanced practices, ensuring there is
             something for everyone.
           </p>
 
           <p>
             Level Differentiation: Each class is clearly labeled with its level
             of difficulty, making it easy for participants to select classes
-            that match their skill level and experience. Whether you're new to
+            that match their skill level and experience. Whether you are new to
             yoga or a seasoned practitioner, we have classes tailored to your
             needs.
           </p>
@@ -165,7 +165,7 @@ export default function FAQS({ questions }) {
             For a comfortable yoga class, aim for a space approximately 20 feet
             by 20 feet with a ceiling height of at least 8 feet. Choose a flat,
             non-slip surface and prioritize good ventilation and lighting.
-            Accessibility and positive energy are key, whether you're practicing
+            Accessibility and positive energy are key, whether you are practicing
             in a studio, community center, or at home.
           </p>
         </div>

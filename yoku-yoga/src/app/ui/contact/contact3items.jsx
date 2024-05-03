@@ -21,7 +21,7 @@ export default function Contact3Items() {
   return (
     <div className={`items contact3items`}>
       {items.map((item) => (
-        <div className="item">
+        <div className="item" key={item.city}>
           <div className={`info ${DARKGREENBG}`}>
             <p className="city">{item.city}</p>
             <p>{item.text}</p>

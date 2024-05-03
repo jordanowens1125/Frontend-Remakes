@@ -14,7 +14,7 @@ export default function Courselist4({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Banks Smith",
     },
     {
       image: "home1/section3-2.jpg",
@@ -25,7 +25,7 @@ export default function Courselist4({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Will Smith",
     },
     {
       image: "home1/section3-3.jpg",
@@ -36,7 +36,7 @@ export default function Courselist4({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Phil Smith",
     },
     {
       image: "home1/section3-4.jpg",
@@ -47,7 +47,7 @@ export default function Courselist4({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Lori Smith",
     },
     {
       image: "home1/section3-5.jpg",
@@ -58,7 +58,7 @@ export default function Courselist4({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Bane Smith",
     },
 
     {
@@ -70,7 +70,7 @@ export default function Courselist4({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Roy Smith",
     },
     {
       image: "home1/section3-1.jpg",
@@ -92,14 +92,14 @@ export default function Courselist4({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Joe Smith",
     },
   ],
 }) {
   return (
     <div className="items courselist4">
       {classes.map((item) => (
-        <div className="item">
+        <div className="item" key={item.name}>
           <div className="img-container">
             <img src={item.image} alt={item.event} className="display" />
             <div className="content">

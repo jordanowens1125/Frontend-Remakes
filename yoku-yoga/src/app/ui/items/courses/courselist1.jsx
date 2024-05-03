@@ -94,7 +94,7 @@ export default function CourseList1({
   return (
     <div className="items courselist1">
       {classes.map((item) => (
-        <div className="item">
+        <div className="item" key={item.title}>
           <div className="img-container">
             <img src={item.image} alt={item.event} />
           </div>
