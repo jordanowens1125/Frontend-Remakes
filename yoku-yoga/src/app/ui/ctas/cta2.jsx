@@ -2,7 +2,7 @@ import "./cta2.scss";
 
 export default function CTA2({
   sectionID,
-  classes,
+  classes ='',
   input,
   button = { btnClass: "btn-6", text: "Subscribe" },
 }) {

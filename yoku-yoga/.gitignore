@@ -6,6 +6,10 @@ could go and add testimonials components and turn the slider functionality into 
 
 optimize the navbar debounce
 
+Fix navbar
+
+Make sure all buttons and links work and go somewhere
+
 # dependencies
 /node_modules
 /.pnp
