@@ -65,10 +65,11 @@
         font-weight: 600;
         grid-area: name;
       }
-      img {
+      svg {
         grid-area: img;
         width: 48px;
         border-radius: 50%;
+        height: 100%;
       }
     }
   }

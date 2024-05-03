@@ -1,5 +1,8 @@
+import LessonSvgComponent from "@/app/icons/lesson";
 import "./courselist4.scss";
 import { LESSON, PEOPLE, BULB } from "@/app/constants/icons";
+import PeopleSvgComponent from "@/app/icons/people";
+import BulbSvgComponent from "@/app/icons/bulb";
 export default function Courselist4({
   classes = [
     {
@@ -101,15 +104,15 @@ export default function Courselist4({
             <img src={item.image} alt={item.event} className="display" />
             <div className="content">
               <span>
-                <img src={LESSON} alt="Lesson" />
+                <LessonSvgComponent fill="transparent" />
                 <p>{item.lessons} Lessons</p>
               </span>
               <span>
-                <img src={PEOPLE} alt="People" />
+                <PeopleSvgComponent />
                 <p>{item.students} Students Enrolled</p>
               </span>
               <span>
-                <img src={BULB} alt="Light Bulb" />
+                <BulbSvgComponent />
                 <p>
                   {item.event} , {item.type}
                 </p>
@@ -117,9 +120,7 @@ export default function Courselist4({
             </div>
           </div>
           <div className="info">
-            <span>
-              With {item.name}
-            </span>
+            <span>With {item.name}</span>
             <p className="title">{item.title}</p>
             <p className="price">${item.price}</p>
           </div>

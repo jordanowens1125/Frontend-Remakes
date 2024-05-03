@@ -1,6 +1,7 @@
 import { RIGHT } from "@/app/constants/icons";
 import "./content1.scss";
 import SectionHeader1 from "../section-headers/sectionheader1";
+import RightArrowSvgComponent from "@/app/icons/right";
 export default function Content1({
   subheader,
   header,
@@ -18,7 +19,7 @@ export default function Content1({
           {buttons.map((button) => (
             <button className={button.class} key={button.text}>
               {button.text}
-              {button.right && <img src={RIGHT} alt="right arrow" />}
+              {button.right && <RightArrowSvgComponent/>}
             </button>
           ))}
         </div>

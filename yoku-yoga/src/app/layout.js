@@ -15,18 +15,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Nav />
-        {/* <div className="col">
-          <button className="btn-1">btn1</button>
-          <button className="btn-2">btn2</button>
-          <button className="btn-3">btn3</button>
-          <button className="btn-4">btn4</button>
-          <button className="btn-5">btn5</button>
-          <button className="btn-6">btn6</button>
-          <button className="btn-7">btn7</button>
-          <button className="btn-8">btn8</button>
-          <button className="btn-9">btn9</button>
-          <button className="btn-10">btn10</button>
-        </div> */}
         {children}
         <Footer />
       </body>

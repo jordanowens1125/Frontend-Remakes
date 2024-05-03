@@ -1,11 +1,12 @@
-import {
-  FACEBOOK,
-  INSTAGRAM,
-  LINKEDIN,
-  PINTEREST,
-  TWITTER,
-} from "@/app/constants/icons";
-import './footer.scss'
+import FacebookSvgComponent from "@/app/icons/facebook";
+import "./footer.scss";
+import LinkedinSvgComponent from "@/app/icons/linkedin";
+import TwitterComponent from "@/app/icons/twitter";
+import PinterestSvgComponent from "@/app/icons/pinterest";
+import InstagramSvgComponent from "@/app/icons/instagram";
+import EmailSvgComponent from "@/app/icons/email";
+import PhoneSvgComponent from "@/app/icons/phone";
+import { WHITELOGO } from "@/app/constants/icons";
 
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
         <section className="upperfooter">
           <div className="container">
             <div className="logo">
-              <img src="" alt="Yoku Logo" className="logo-img" />
+              <img src={WHITELOGO} alt="Yoku Logo" className="logo-img" />
               <p>
                 Far far away, behind the word mountains, far from countries
                 Vokalia and Consonantia, there live the blind texts. Separated
@@ -45,11 +46,11 @@ export default function Footer() {
 
               <div className="items">
                 <a className="item">
-                  <img src="" alt="Phone" />
+                  <PhoneSvgComponent />
                   <p>1800-234-2356</p>
                 </a>
                 <a className="item">
-                  <img src="" alt="Email" />
+                  <EmailSvgComponent fill="transparent" />
                   <p>contact@yokuyoga.co</p>
                 </a>
               </div>
@@ -60,11 +61,11 @@ export default function Footer() {
           <div className="container">
             <p>Copyright @ 2024 Goodlayers. All Rights Reserved.</p>
             <div className="links">
-              <img src={FACEBOOK} alt="Facebook logo" />
-              <img src={LINKEDIN} alt="Linkedin logo" />
-              <img src={PINTEREST} alt="Pinterest logo" />
-              <img src={TWITTER} alt="X logo" />
-              <img src={INSTAGRAM} alt="Instagram logo" />
+              <FacebookSvgComponent />
+              <LinkedinSvgComponent />
+              <TwitterComponent />
+              <PinterestSvgComponent />
+              <InstagramSvgComponent />
             </div>
           </div>
         </section>

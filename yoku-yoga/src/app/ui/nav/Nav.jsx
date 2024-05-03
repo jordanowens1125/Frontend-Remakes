@@ -1,8 +1,11 @@
 "use client";
 
-import { ACCOUNT, CANCEL, DARKLOGO } from "@/app/constants/icons";
+import { DARKLOGO } from "@/app/constants/icons";
 import "./nav.scss";
 import { useState } from "react";
+import AccountSVGComponent from "@/app/icons/account";
+import { WHITE } from "@/app/constants/colors";
+import CancelSvgComponent from "@/app/icons/cancel";
 
 export default function Nav() {
   const [showBG, setShowBG] = useState(false);
@@ -26,6 +29,7 @@ export default function Nav() {
   const clearSecondary = (e) => {
     if (window.innerWidth < 1000) {
       setState({ ...state, secondary: false });
+      e.target.parentNode.parentNode.parentNode.classList.remove("active");
     }
   };
 
@@ -58,6 +62,10 @@ export default function Nav() {
   let lastScrollTop = 0;
 
   window.addEventListener("scroll", () => {
+    handleScroll();
+  });
+
+  const handleScroll = debounce(() => {
     const st = window.scrollY || document.body.scrollTop;
     if (st > lastScrollTop) {
       // console.log("down");
@@ -71,7 +79,23 @@ export default function Nav() {
       }
     }
     lastScrollTop = st;
-  });
+  }, 500);
+
+  function debounce(func, wait, immediate) {
+    let timeout = null;
+    return function () {
+      const context = this,
+        args = arguments;
+      const later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      const callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
 
   return (
     <>
@@ -83,13 +107,13 @@ export default function Nav() {
           <div className="right">
             <div>
               <div className={state.active ? "links active" : "links"}>
-                <img
-                  src={CANCEL}
-                  alt=""
-                  className="cancel"
-                  onClick={() => setState(clearState)}
-                />
-                <a href="/"className="a">Home</a>
+                <div onClick={() => setState(clearState)} className="back">
+                  <CancelSvgComponent />
+                </div>
+
+                <a href="/" className="a">
+                  Home
+                </a>
                 {/* <div className="a">
                   <span onClick={() => setState({ ...state, primary: HOME })}>
                     Home
@@ -121,17 +145,15 @@ export default function Nav() {
                     }
                   >
                     <div className="b">
-                      <img
-                        src={CANCEL}
-                        alt=""
-                        className="back"
-                        onClick={clearPrimary}
-                      />
+                      <div className="back" onClick={clearPrimary}>
+                        <CancelSvgComponent />
+                      </div>
+
                       <a href="/about1">About 1</a>
                       <a href="/about2">About 2</a>
                       <a href="/instructor1">Our Instructors 1</a>
                       <a href="/instructor2">Our Instructors 2</a>
-                      <a href="/timetable">Timetable</a>
+                      {/* <a href="/timetable">Timetable</a> */}
                       <a href="/faq">FAQ</a>
                     </div>
                   </div>
@@ -145,12 +167,10 @@ export default function Nav() {
                     }
                   >
                     <div className="b">
-                      <img
-                        src={CANCEL}
-                        alt=""
-                        className="back"
-                        onClick={clearPrimary}
-                      />
+                      <div onClick={clearPrimary}>
+                        <CancelSvgComponent />
+                      </div>
+
                       <span
                         className="c"
                         onClick={(e) => setSecondary(e, CLASSLIST)}
@@ -164,12 +184,10 @@ export default function Nav() {
                           }
                         >
                           <div className="b">
-                            <img
-                              src={CANCEL}
-                              alt=""
-                              className="back"
-                              onClick={clearSecondary}
-                            />
+                            <div onClick={(e) => clearSecondary(e)}>
+                              <CancelSvgComponent />
+                            </div>
+
                             <a href="/courselist1">Course List 1</a>
                             <a href="/courselist2">Course List 2</a>
                             <a href="/courselist3">Course List 3</a>
@@ -190,12 +208,9 @@ export default function Nav() {
                     }
                   >
                     <div className="b">
-                      <img
-                        src={CANCEL}
-                        alt=""
-                        className="back"
-                        onClick={clearPrimary}
-                      />
+                      <div onClick={clearPrimary}>
+                        <CancelSvgComponent />
+                      </div>
 
                       <span
                         className="c"
@@ -210,12 +225,10 @@ export default function Nav() {
                           }
                         >
                           <div className="b">
-                            <img
-                              src={CANCEL}
-                              alt=""
-                              className="back"
-                              onClick={clearSecondary}
-                            />
+                            <div onClick={(e) => clearSecondary(e)}>
+                              <CancelSvgComponent />
+                            </div>
+
                             <a href="/contact1">Contact 1</a>
                             <a href="/contact2">Contact 2</a>
                             <a href="/contact3">Contact 3</a>
@@ -240,8 +253,9 @@ export default function Nav() {
               <div className="line"></div>
               <div className="line"></div>
             </div>
-
-            <img src={ACCOUNT} alt="" className="account" />
+            <a href="/" className="account">
+              <AccountSVGComponent stroke={WHITE} />
+            </a>
           </div>
         </div>
       </nav>

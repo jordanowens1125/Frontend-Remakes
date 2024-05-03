@@ -1,5 +1,6 @@
 import { RIGHT } from "@/app/constants/icons";
 import "./content3.scss";
+import RightArrowSvgComponent from "@/app/icons/right";
 export default function Content3({
   subheader = "Yoku's Strength",
   header = "Our Expertises",
@@ -17,7 +18,7 @@ export default function Content3({
       {link && (
         <a href={link.route}>
           {link.text}
-          <img src={RIGHT} />
+          <RightArrowSvgComponent />
         </a>
       )}
     </div>

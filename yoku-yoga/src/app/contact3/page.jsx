@@ -12,7 +12,10 @@ export default function Page() {
       <PageHeader1 header={"Contact Us"} subheader={"Get In Touch"} />
       <Contact3Items />
       <section className={GREYBG}>
-        <ContactForm />
+        <div className="container">
+           <ContactForm />
+        </div>
+       
       </section>
 
       <Socials />

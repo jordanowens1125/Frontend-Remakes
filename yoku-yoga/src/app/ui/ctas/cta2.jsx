@@ -8,7 +8,7 @@ export default function CTA2({
 }) {
   return (
     <>
-      <div id={sectionID} className={`${classes} + cta2`}>
+      <div id={sectionID} className={`${classes}  cta2`}>
         <section className="container">
           <div className="content">
             <div className="img-container">

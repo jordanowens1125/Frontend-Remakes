@@ -1,3 +1,4 @@
+import SendSvgComponent from "@/app/icons/send";
 import "./cta1.scss";
 import { SEND } from "@/app/constants/icons";
 
@@ -12,7 +13,7 @@ export default function CTA1({
       <p>{text}</p>
       <form>
         <span>
-          <img src={SEND} alt="Send" />
+          <SendSvgComponent fill="transparent"/>
           <input type="email" placeholder="Your Email Address" />
         </span>
         {button && (

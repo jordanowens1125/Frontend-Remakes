@@ -1,6 +1,5 @@
+import LessonSvgComponent from "../icons/lesson";
 import FloatingRightSBS from "../ui/sbs/floating-right-img";
-import { LESSON } from "../constants/icons";
-
 export default function HomeSection10() {
   return (
     <>
@@ -17,40 +16,49 @@ export default function HomeSection10() {
             </p>
             <div className="items">
               <p className="item">
-                <img src={LESSON} alt="" /> Meditation
+                <LessonSvgComponent fill="transparent" />
+                Meditation
               </p>
               <p className="item">
-                <img src={LESSON} alt="" /> Yoga Therapy
+                <LessonSvgComponent fill="transparent" />
+                Yoga Therapy
               </p>
               <p className="item">
-                <img src={LESSON} alt="" /> Anatomy
+                <LessonSvgComponent fill="transparent" />
+                Anatomy
               </p>
               <p className="item">
-                <img src={LESSON} alt="" /> Pranayama
+                <LessonSvgComponent fill="transparent" />
+                Pranayama
               </p>
               <p className="item">
-                <img src={LESSON} alt="" /> Yoga Poses
+                <LessonSvgComponent fill="transparent" />
+                Yoga Poses
               </p>
               <p className="item">
-                <img src={LESSON} alt="" /> Remedies
+                <LessonSvgComponent fill="transparent" />
+                Remedies
               </p>
               <p className="item">
-                <img src={LESSON} alt="" /> Yin Poses
+                <LessonSvgComponent fill="transparent" />
+                Yin Poses
               </p>
               <p className="item">
-                <img src={LESSON} alt="" /> Seasonal Tips
+                <LessonSvgComponent fill="transparent" />
+                Seasonal Tips
               </p>
               <p className="item">
-                <img src={LESSON} alt="" /> Styles
+                <LessonSvgComponent fill="transparent" />
+                Styles
               </p>
               <p className="item">
-                <img src={LESSON} alt="" /> Recipes
+                <LessonSvgComponent fill="transparent" />
+                Recipes
               </p>
             </div>
           </>
         }
         Rightimg={<img src="about1/section-1.png" alt="" />}
-        sectionID={"articles"}
       />
     </>
   );

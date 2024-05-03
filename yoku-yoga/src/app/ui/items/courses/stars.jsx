@@ -1,14 +1,15 @@
 import { STAR } from "@/app/constants/icons";
 import "./stars.scss";
+import StarSvgComponent from "@/app/icons/star";
 
 export default function Stars() {
   return (
     <div className="stars">
-      <img src={STAR} alt="Star" />
-      <img src={STAR} alt="Star" />
-      <img src={STAR} alt="Star" />
-      <img src={STAR} alt="Star" />
-      <img src={STAR} alt="Star" />
+      <StarSvgComponent />
+      <StarSvgComponent />
+      <StarSvgComponent />
+      <StarSvgComponent />
+      <StarSvgComponent />
     </div>
   );
 }

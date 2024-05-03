@@ -1,23 +1,28 @@
+import EmailSvgComponent from "@/app/icons/email";
 import "./socials.scss";
+import FacebookSvgComponent from "@/app/icons/facebook";
+import SkypeSvgComponent from "@/app/icons/skype";
+import TwitterComponent from "@/app/icons/twitter";
 
 export default function Socials({ sectionID, classes }) {
   return (
     <section className={classes} id={sectionID}>
       <div className="container contact-link-icons">
         <a href="/">
-          <img src="mail.svg" alt="" />
+          <EmailSvgComponent fill="transparent" />
         </a>
         <a href="/">
-          <img src="facebook.svg" alt="" />
+          <FacebookSvgComponent />
         </a>
         {/* <a href="/">
           <img src="linkedin.svg" alt="" />
         </a> */}
         <a href="/">
           <img src="skype.svg" alt="" />
+          <SkypeSvgComponent />
         </a>
         <a href="/">
-          <img src="twitter.svg" alt="" />
+          <TwitterComponent />
         </a>
       </div>
     </section>

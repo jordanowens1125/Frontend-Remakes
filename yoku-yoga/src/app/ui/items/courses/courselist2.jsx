@@ -1,7 +1,8 @@
 import { BOOKMARK, BULB, PEOPLE } from "@/app/constants/icons";
 import "./courselist2.scss";
-import Stars from "./stars";
-import { LESSON } from "@/app/constants/icons";
+import LessonSvgComponent from "@/app/icons/lesson";
+import BulbSvgComponent from "@/app/icons/bulb";
+import PeopleSvgComponent from "@/app/icons/people";
 
 export default function CourseList2({
   classes = [
@@ -104,15 +105,15 @@ export default function CourseList2({
             <img src={item.image} alt={item.event} className="display" />
             <div className="content">
               <span>
-                <img src={LESSON} alt="Lesson" />
+                <LessonSvgComponent fill="transparent"/>
                 <p>{item.lessons} Lessons</p>
               </span>
               <span>
-                <img src={PEOPLE} alt="People" />
+                <PeopleSvgComponent fill=""/>
                 <p>{item.students} Students Enrolled</p>
               </span>
               <span>
-                <img src={BULB} alt="Light Bulb" />
+                <BulbSvgComponent/>
                 <p>
                   {item.event} , {item.type}
                 </p>

@@ -1,6 +1,7 @@
 import { AVATAR } from "@/app/constants/icons";
 import "./courselist3.scss";
 import Stars from "./stars";
+import AvatarSvgComponent from "@/app/icons/avatar";
 
 export default function Courselist3({
   courses = [
@@ -107,7 +108,7 @@ export default function Courselist3({
     <div className="items courselist3">
       {courses.map((item) => (
         <div className="item" key={item.title}>
-          <img src={item.image} alt={item.title} className="course-img"/>
+          <img src={item.image} alt={item.title} className="course-img" />
           <div className="info">
             <p className="title">{item.title}</p>
             <span className="price">${item.price}</span>
@@ -125,7 +126,7 @@ export default function Courselist3({
             </span>
             <p className="text">{item.text}</p>
             <div className="instructor">
-              <img src={AVATAR} alt="Avatar" />
+              <AvatarSvgComponent />
               <p className="teacher">Teacher</p>
               <p className="name">{item.instructor}</p>
             </div>

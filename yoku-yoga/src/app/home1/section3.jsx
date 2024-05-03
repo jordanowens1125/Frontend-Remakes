@@ -1,7 +1,8 @@
 "use client";
-
-import { LEFT, RIGHT } from "@/app/constants/icons";
 import { useState } from "react";
+import LeftArrowSvgComponent from "../icons/left";
+import RightArrowSvgComponent from "../icons/right";
+import CLASSES from "../constants/classes";
 
 export default function HomeSection3() {
   const [number, setNumber] = useState(1);
@@ -107,14 +108,14 @@ export default function HomeSection3() {
           </p>
           <div className="arrows">
             <button onClick={downOne}>
-              <img src={LEFT} alt="" />
+              <LeftArrowSvgComponent />
             </button>
             <button onClick={upOne}>
-              <img src={RIGHT} alt="" />
+              <RightArrowSvgComponent />
             </button>
           </div>
           <button className="btn-3">
-            Browse All Classes <img src={RIGHT} alt="Arrow" />
+            Browse All Classes <RightArrowSvgComponent />
           </button>
         </div>
 
@@ -125,10 +126,10 @@ export default function HomeSection3() {
           onTouchMove={onTouchMove}
           onTouchEnd={onTouchEnd}
         >
-          <div className="item" id="homepage-section3-item">
+          <div className="item active" id="homepage-section3-item">
             <div className="img-container">
               <img src="home1/section3-1.jpg" alt="" />
-              <div className="content-items">
+              {/* <div className="content-items">
                 <div className="content-item">
                   6 <img src="" alt="" />
                 </div>
@@ -138,7 +139,7 @@ export default function HomeSection3() {
                 <div className="content-item">
                   6 <img src="" alt="" />
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="item-info">
               <p className="instructor">With Jane Smith</p>
@@ -147,115 +148,29 @@ export default function HomeSection3() {
             </div>
           </div>
 
-          <div className="item">
-            <div className="img-container">
-              <img src="home1/section3-1.jpg" alt="" className="active" />
-              <div className="content-items">
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
+          {CLASSES.map((item) => (
+            <div className="item">
+              <div className="img-container">
+                <img src={item.image} alt={item.title} />
+                {/* <div className="content-items">
+                  <div className="content-item">
+                    6 <img src="" alt="" />
+                  </div>
+                  <div className="content-item">
+                    6 <img src="" alt="" />
+                  </div>
+                  <div className="content-item">
+                    6 <img src="" alt="" />
+                  </div>
+                </div> */}
+              </div>
+              <div className="item-info">
+                <p className="instructor">With {item.teacher}</p>
+                <p className="class">{item.title}</p>
+                <p className="price">${item.price}</p>
               </div>
             </div>
-            <div className="item-info">
-              <p className="instructor">With Jane Smith</p>
-              <p className="class">Yoga for Beginners Course</p>
-              <p className="price">$39</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <div className="img-container">
-              <img src="home1/section3-1.jpg" alt="" className="active" />
-              <div className="content-items">
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="item-info">
-              <p className="instructor">With Jane Smith</p>
-              <p className="class">Yoga for Beginners Course</p>
-              <p className="price">$39</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <div className="img-container">
-              <img src="home1/section3-1.jpg" alt="" />
-              <div className="content-items">
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="item-info">
-              <p className="instructor">With Jane Smith</p>
-              <p className="class">Yoga for Beginners Course</p>
-              <p className="price">$39</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <div className="img-container">
-              <img src="home1/section3-1.jpg" alt="" />
-              <div className="content-items">
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="item-info">
-              <p className="instructor">With Jane Smith</p>
-              <p className="class">Yoga for Beginners Course</p>
-              <p className="price">$39</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <div className="img-container">
-              <img src="home1/section3-1.jpg" alt="" />
-              <div className="content-items">
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-                <div className="content-item">
-                  6 <img src="" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="item-info">
-              <p className="instructor">With Jane Smith</p>
-              <p className="class">Yoga for Beginners Course</p>
-              <p className="price">$39</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

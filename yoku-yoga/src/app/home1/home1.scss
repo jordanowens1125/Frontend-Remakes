@@ -75,6 +75,9 @@
     p {
       width: 70%;
     }
+    a {
+      font-size: 16px;
+    }
   }
   @media screen and (min-width: 1024px) {
     height: 804px;
@@ -341,7 +344,7 @@
       align-items: center;
       gap: 16px;
     }
-    img {
+    svg {
       width: 20px;
     }
   }
@@ -377,7 +380,7 @@
     -moz-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.09);
     -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.09);
     line-height: 1.7;
-
+    height: fit-content;
     color: #848484;
     .item-info {
       display: grid;
@@ -392,6 +395,7 @@
         aspect-ratio: 1;
         border-radius: 50%;
         grid-area: img;
+        object-fit: cover;
       }
       .name {
         color: #6f948d;
@@ -399,6 +403,8 @@
         font-weight: 600;
         letter-spacing: 2px;
         text-transform: uppercase;
+        height: fit-content;
+        margin-top: auto;
       }
       .customer {
         color: #3b3b3b;

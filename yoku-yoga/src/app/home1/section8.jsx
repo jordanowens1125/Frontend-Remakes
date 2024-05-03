@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
-import { LEFT, RIGHT } from "@/app/constants/icons";
+import LeftArrowSvgComponent from "../icons/left";
+import RightArrowSvgComponent from "../icons/right";
+import TESTIMONIALS from "../constants/testimonials";
 
 export default function HomeSection8() {
   const [number, setNumber] = useState(0);
@@ -63,10 +65,10 @@ export default function HomeSection8() {
           <p>{sectionText}</p>
           <div className="arrows">
             <button onClick={downOne}>
-              <img src={LEFT} alt="Left" />
+              <LeftArrowSvgComponent />
             </button>
             <button onClick={upOne}>
-              <img src={RIGHT} alt="Right" />
+              <RightArrowSvgComponent />
             </button>
           </div>
         </div>
@@ -92,47 +94,18 @@ export default function HomeSection8() {
             </div>
           </div>
 
-          <div className="item" id="homepage-section8-item">
-            <p className="text">
-              The Yoga Yajnavalkya is another early text on yoga that provides
-              description of Yoga techniques and its benefits. Two of its
-              Sanskrit palm-leaf manuscripts have been dated, one is from the
-              early 10th-century CE and another more firmly
-            </p>
-            <div className="item-info">
-              <img src="home1/section8-1.jpg" alt="" />
-              <p className="name">Mildred Reed</p>
-              <p className="customer">Customer</p>
+          {TESTIMONIALS.map((item) => (
+            <div className="item" key={item.name}>
+              <p className="text">
+                {item.text}
+              </p>
+              <div className="item-info">
+                <img src={item.image} alt={item.name} />
+                <p className="name">{ item.name}</p>
+                <p className="customer">Customer</p>
+              </div>
             </div>
-          </div>
-
-          <div className="item" id="homepage-section8-item">
-            <p className="text">
-              The Yoga Yajnavalkya is another early text on yoga that provides
-              description of Yoga techniques and its benefits. Two of its
-              Sanskrit palm-leaf manuscripts have been dated, one is from the
-              early 10th-century CE and another more firmly
-            </p>
-            <div className="item-info">
-              <img src="home1/section8-1.jpg" alt="" />
-              <p className="name">Mildred Reed</p>
-              <p className="customer">Customer</p>
-            </div>
-          </div>
-
-          <div className="item" id="homepage-section8-item">
-            <p className="text">
-              The Yoga Yajnavalkya is another early text on yoga that provides
-              description of Yoga techniques and its benefits. Two of its
-              Sanskrit palm-leaf manuscripts have been dated, one is from the
-              early 10th-century CE and another more firmly
-            </p>
-            <div className="item-info">
-              <img src="home1/section8-1.jpg" alt="" />
-              <p className="name">Mildred Reed</p>
-              <p className="customer">Customer</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

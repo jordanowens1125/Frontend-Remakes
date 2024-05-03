@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
-import { LEFT, RIGHT } from "@/app/constants/icons";
+import LeftArrowSvgComponent from "../icons/left";
+import RightArrowSvgComponent from "../icons/right";
+import INSTRUCTORS from "../constants/instructors";
 // import Slider from "../../slider/slider";
 // import Section5ItemElement from "./section5-item";
 
@@ -120,10 +122,10 @@ export default function HomeSection5() {
             <p>{sectionText}</p>
             <div className="arrows">
               <button onClick={downOne}>
-                <img src={LEFT} alt="" />
+                <LeftArrowSvgComponent />
               </button>
               <button onClick={upOne}>
-                <img src={RIGHT} alt="" />
+                <RightArrowSvgComponent />
               </button>
             </div>
           </div>
@@ -145,55 +147,17 @@ export default function HomeSection5() {
               </div>
             </div>
 
-            <div className="item">
-              <div className="img-container">
-                <img src="home1/section3-1.jpg" alt="" className="active" />
+            {INSTRUCTORS.map((item) => (
+              <div className="item">
+                <div className="img-container">
+                  <img src={item.image} alt={item.name} />
+                </div>
+                <div className="item-info">
+                  <p className="instructor">{item.name}</p>
+                  <p className="class">{item.courses} Classes</p>
+                </div>
               </div>
-              <div className="item-info">
-                <p className="instructor">Brenda Robertson</p>
-                <p className="class">1 Classes</p>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="img-container">
-                <img src="home1/section3-1.jpg" alt="" className="active" />
-              </div>
-              <div className="item-info">
-                <p className="instructor">Brenda Robertson</p>
-                <p className="class">1 Classes</p>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="img-container">
-                <img src="home1/section3-1.jpg" alt="" />
-              </div>
-              <div className="item-info">
-                <p className="instructor">Brenda Robertson</p>
-                <p className="class">1 Classes</p>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="img-container">
-                <img src="home1/section3-1.jpg" alt="" />
-              </div>
-              <div className="item-info">
-                <p className="instructor">Brenda Robertson</p>
-                <p className="class">1 Classes</p>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="img-container">
-                <img src="home1/section3-1.jpg" alt="" />
-              </div>
-              <div className="item-info">
-                <p className="instructor">Brenda Robertson</p>
-                <p className="class">1 Classes</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

@@ -2,6 +2,8 @@ import { EMAIL, PHONE } from "@/app/constants/icons";
 import "./contact2section.scss";
 import ContactForm from "./form";
 import { LIGHTGREYBG } from "@/app/constants/backgroundClasses";
+import EmailSvgComponent from "@/app/icons/email";
+import PhoneSvgComponent from "@/app/icons/phone";
 
 export default function Contact2Section() {
   return (
@@ -14,11 +16,11 @@ export default function Contact2Section() {
             <p>4 apt. Flawing Street. The Grand Avenue.</p>
             <p>Liverpool, UK 33342</p>
             <a href="">
-              <img src={EMAIL} alt="Email" />
+              <EmailSvgComponent fill="transparent" />
               contact@infinitewptheme.com
             </a>
             <a href="">
-              <img src={PHONE} alt="Phone" />
+              <PhoneSvgComponent fill="transparent" />
               +1-3524-3356
             </a>
           </div>

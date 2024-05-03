@@ -2,6 +2,9 @@ import { BOOKMARK, PEOPLE } from "@/app/constants/icons";
 import "./courselist1.scss";
 import Stars from "./stars";
 import { LESSON } from "@/app/constants/icons";
+import LessonSvgComponent from "@/app/icons/lesson";
+import BookMarkSvgComponent from "@/app/icons/bookmark";
+import PeopleSvgComponent from "@/app/icons/people";
 
 export default function CourseList1({
   classes = [
@@ -109,15 +112,15 @@ export default function CourseList1({
           <div className="item-section">
             <span className="bottom">
               <p className="price">${item.price}</p>
-              <img src={BOOKMARK} alt="Bookmark" className="bookmark" />
+              <BookMarkSvgComponent stroke="#3dbca8" />
             </span>
             <div className="info">
               <span>
-                <img src={LESSON} alt="Lesson" />
+                <LessonSvgComponent fill="white" />
                 <p>{item.lessons} lessons</p>
               </span>
               <span>
-                <img src={PEOPLE} alt="Students" />
+                <PeopleSvgComponent fill="white" stroke="#a2a2a2" />
                 <p>{item.students} Students Enrolled</p>
               </span>
             </div>

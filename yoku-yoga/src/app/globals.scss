@@ -87,6 +87,8 @@ section {
     max-width: 428px;
     margin-bottom: 30px;
     .arrows {
+      color: #878787;
+      stroke: #878787;
       display: none;
       button {
         padding: 1rem;
@@ -201,7 +203,8 @@ button,
   gap: 0.5rem;
   padding: 15px 33px;
   border-radius: 30px;
-  img {
+  color: inherit;
+  svg {
     width: 27px;
     fill: inherit;
     color: inherit;
@@ -312,6 +315,7 @@ button,
 /* backgrounds */
 
 .notfound {
+  padding-top: 100px;
   background-color: #dcf9f4;
   position: relative;
   opacity: 0.9;
@@ -368,6 +372,7 @@ button,
     padding-bottom: 175px;
   }
   @media screen and (min-width: 768px) {
+    height: 100vh;
     h1 {
       font-size: 150px;
     }

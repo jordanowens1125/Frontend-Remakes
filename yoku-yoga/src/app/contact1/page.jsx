@@ -11,7 +11,9 @@ export default function Page() {
       <PageHeader1 header={"Contact Us"} subheader={"Get In Touch"} />
       <Contact1Items classes={DARKGREENBG} />
       <section className={GREYBG}>
-        <ContactForm />
+        <div className="container">
+          <ContactForm />
+        </div>
       </section>
 
       <FullMap />

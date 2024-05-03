@@ -16,7 +16,9 @@ footer {
         font-weight: 600;
         margin-bottom: 35px;
       }
-
+      .logo-img {
+        max-width: 150px;
+      }
       .quicklinks {
         .items {
           display: flex;
@@ -43,9 +45,9 @@ footer {
 
           .item {
             display: grid;
-            grid-template-columns: 70px 1fr;
+            grid-template-columns: min-content 1fr;
             align-items: center;
-            gap: 0.25rem;
+            gap: 8px;
             color: #8fbab3;
             img {
               width: fit-content;
@@ -73,7 +75,7 @@ footer {
         display: flex;
         gap: 0.5rem;
         color: #8fbab3;
-        img {
+        svg {
           width: 19px;
         }
       }
