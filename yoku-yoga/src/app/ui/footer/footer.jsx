@@ -26,14 +26,14 @@ export default function Footer() {
             <div className="quicklinks">
               <p className="footer-header">Quick Links</p>
               <div className="items">
-                <a href="/pricing">Pricing</a>
-                <a href="/pricing">Become Instructor</a>
-                <a href="/pricing">Courses</a>
-                <a href="/pricing">Contact Us</a>
-                <a href="/pricing">FAQ</a>
-                <a href="/pricing">Privacy Policy</a>
-                <a href="/pricing">Terms of Service</a>
-                <a href="/pricing">Support Center</a>
+                {/* <a href="/">Pricing</a> */}
+                <a href="/instructors1">Become Instructor</a>
+                <a href="/courselist1">Courses</a>
+                <a href="/contact1">Contact Us</a>
+                <a href="/faq">FAQ</a>
+                <a href="/">Privacy Policy</a>
+                <a href="/">Terms of Service</a>
+                <a href="/">Support Center</a>
               </div>
             </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
 
               <div className="items">
                 <a className="item">
-                  <PhoneSvgComponent />
+                  <PhoneSvgComponent fill="transparent" />
                   <p>1800-234-2356</p>
                 </a>
                 <a className="item">
