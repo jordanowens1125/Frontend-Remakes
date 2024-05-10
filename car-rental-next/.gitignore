@@ -1,13 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-https://demo.goodlayers.com/yoku/demo1/
-
-could go and add testimonials components and turn the slider functionality into a reuseable component
-
-
-All sbs paddings are bad on mobile
-
-
 # dependencies
 /node_modules
 /.pnp

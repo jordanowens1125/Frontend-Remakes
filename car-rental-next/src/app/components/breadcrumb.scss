@@ -1,0 +1,56 @@
+
+#breadcrumb {
+  background-image: url("../../../public/breadcrumb.png");
+  min-height: 410px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 9;
+  }
+  .container {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #010103;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .header {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+  }
+  a:hover {
+    color: var(--primary);
+  }
+}
+
+@media screen and (min-width: 0) {
+  #breadcrumb {
+  }
+}

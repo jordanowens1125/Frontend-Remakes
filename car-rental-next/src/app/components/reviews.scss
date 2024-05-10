@@ -1,0 +1,68 @@
+#reviews {
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  .item {
+    color: #010103;
+    background-color: #fff;
+    padding: 35px 20px;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    row-gap: 0;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.05);
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-areas:
+      "text text text"
+      "img name  svg"
+      "img area  svg";
+    svg {
+      margin-top: auto;
+      min-width: 50px;
+      color: var(--primary);
+      fill: var(--primary);
+      grid-area: svg;
+    }
+    .text {
+      grid-area: text;
+      margin-bottom: 25px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+    }
+    img {
+      grid-area: img;
+      min-width: 75px;
+    }
+    .name {
+      margin-top: auto;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 18px;
+      margin-bottom: 5px;
+    }
+    .area {
+      margin-bottom: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #reviews {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #reviews {
+    .item {
+      padding: 50px;
+    }
+  }
+}

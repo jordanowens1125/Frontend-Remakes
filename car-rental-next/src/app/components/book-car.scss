@@ -1,0 +1,105 @@
+
+#bookcarform {
+  background-image: url("https://demo.xpeedstudio.com/carrental/home-v4/wp-content/uploads/sites/5/2020/08/home4-car-book-bg.png");
+
+  .container {
+    padding: 3rem 1.5rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: #010103;
+  }
+  h2 {
+    margin-bottom: 18px;
+    font-weight: 700;
+    grid-column: -1/1;
+  }
+  .error {
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8d7da;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #721c24;
+    font-size: 1.3rem;
+  }
+  span {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    grid-template-rows: 26px 1fr;
+    input,
+    select,
+    button {
+      grid-area: input;
+    }
+  }
+  select,
+  input {
+    padding: 1rem 0.5rem;
+    border: 1px solid #ccd7e6;
+    border-radius: 3px;
+    color: #ababab;
+    width: 100%;
+  }
+  label {
+    font-weight: 600;
+    display: flex;
+    &:after {
+      display: inline;
+      content: " *";
+      color: var(--primary);
+    }
+  }
+  button {
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(-36deg, #ff4c30 0, #ff6830 100%);
+    box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
+    border-radius: 3px;
+  }
+  .submit {
+    display: flex;
+  }
+  .type,
+  .submit,
+  .error {
+    grid-column: -1/1;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #bookcarform {
+    background-image: unset;
+    .container {
+      box-shadow: var(--box-shadow);
+      background-image: url("https://demo.xpeedstudio.com/carrental/home-v4/wp-content/uploads/sites/5/2020/08/home4-car-book-bg.png");
+    }
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    span {
+      display: grid;
+      grid-template-areas:
+        "label"
+        "input";
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #bookcarform {
+    form {
+      padding: 2rem;
+      gap: 24px;
+      row-gap: 30px;
+    }
+  }
+}

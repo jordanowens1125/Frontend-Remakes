@@ -1,0 +1,31 @@
+
+#banner1 {
+  background-color: #2d2d2d;
+  text-align: center;
+  color: #fff;
+  .banner-h {
+    margin-bottom: 1.5rem;
+    font-size: 42px;
+    line-height: 1.3;
+  }
+  p {
+    font-size: 20px;
+    text-transform: capitalize;
+    span {
+      color: var(--primary);
+      font-weight: 500;
+      margin: 0 4px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #banner1 {
+    .banner-h{
+      font-size: 52px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+}

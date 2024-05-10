@@ -1,0 +1,34 @@
+---
+const features = [
+    {
+        image:'', 
+        header:'Header', 
+        text:'Text'
+    },
+    {
+        image:'', 
+        header:'Header', 
+        text:'Text'
+    }
+]
+import Feature from './Feature.astro';
+---
+
+<div className='features'>
+
+{
+    features.map((feature)=>(
+        <div class='item'>
+            <img src={feature.image} alt={feature.header} />
+        <p className="item-h">{ feature.header}</p>
+        <p>{feature.text}</p>
+        </div>
+    ))
+}
+</div>
+
+<style>
+    .features{
+        border:1px red solid;
+    }
+</style>
