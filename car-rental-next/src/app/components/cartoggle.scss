@@ -19,6 +19,8 @@
     color: #000;
     &:hover {
       cursor: pointer;
+      color: #fff;
+      background-color: var(--primary);
     }
   }
   input {
@@ -58,7 +60,7 @@
       }
     }
   }
-  button {
+  a {
     margin-top: 10px;
     background-color: var(--primary);
     color: #fff;

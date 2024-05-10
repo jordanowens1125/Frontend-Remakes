@@ -1,0 +1,106 @@
+#cars {
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    .info {
+      display: grid;
+      grid-template-areas:
+        "name       . price"
+        "stars      . per"
+        "details    details details"
+        "button     button  button";
+      border: 1px solid #d5d5d5;
+      padding: 10px 15px;
+      color: #010103;
+    }
+    .item-h,
+    .per,
+    .price,
+    .stars,
+    .per,
+    .details,
+    a {
+      height: fit-content;
+      width: fit-content;
+      margin: auto 0;
+    }
+    .details {
+      border-bottom: 1px solid #d5d5d5;
+      padding-bottom: 20px;
+      grid-area: details;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 8px;
+      width: 100%;
+      .detail {
+        color: #6b6b6b;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        svg {
+          color: #010103;
+          width: 20px;
+        }
+      }
+    }
+
+    .item-h {
+      grid-area: name;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .per {
+      grid-area: per;
+    }
+    .price {
+      grid-area: price;
+      font-size: 32px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      span {
+        font-size: 16px;
+      }
+    }
+    .stars {
+      grid-area: stars;
+    }
+    .stars,
+    .per {
+      margin-bottom: 10px;
+    }
+    a {
+      grid-area: button;
+      margin: 20px auto;
+    }
+    .per,
+    .price,
+    .detail:nth-of-type(even) {
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #cars {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #cars {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

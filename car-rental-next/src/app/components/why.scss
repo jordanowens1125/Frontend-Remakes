@@ -9,7 +9,7 @@
   .sbs {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
   }
   .left {
     display: flex;
@@ -27,12 +27,8 @@
     font-size: 2.5rem;
     line-height: 1.2;
   }
-  button {
+  a {
     width: fit-content;
-    display: flex;
-    background-color: var(--primary);
-    color: #fff;
-    font-weight: 600;
     margin-top: 20px;
   }
 

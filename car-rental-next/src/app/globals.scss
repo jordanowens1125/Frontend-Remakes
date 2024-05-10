@@ -4,7 +4,6 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
   --primary: #ff4d30;
 }
 
@@ -27,6 +26,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -78,4 +78,33 @@ input {
 textarea:focus,
 input:focus {
   outline: none;
+}
+
+button,
+.btn,
+.btn-1,
+.btn-2,
+.btn-3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 22px;
+  padding: 17px 21px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  svg {
+    width: 20px;
+  }
+}
+.btn-1 {
+  color: #fff;
+  background-image: linear-gradient(to right, #ff4c30, #ff6830, #fff, #f3806f);
+  background-size: 300% 100%;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  svg {
+    color: #fff;
+  }
 }

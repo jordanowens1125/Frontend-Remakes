@@ -20,6 +20,7 @@
       "img name  svg"
       "img area  svg";
     svg {
+      display: none;
       margin-top: auto;
       min-width: 50px;
       color: var(--primary);
@@ -36,6 +37,9 @@
     img {
       grid-area: img;
       min-width: 75px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
     }
     .name {
       margin-top: auto;
@@ -46,6 +50,7 @@
     }
     .area {
       margin-bottom: auto;
+      grid-area: area;
     }
   }
 }
@@ -63,6 +68,9 @@
   #reviews {
     .item {
       padding: 50px;
+      svg{
+        display: block;
+      }
     }
   }
 }

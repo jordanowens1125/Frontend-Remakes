@@ -13,7 +13,7 @@ export default function Hero() {
             molestias.
           </p>
           <div className="buttons">
-            <a>Book Ride</a>
+            <a className="btn-1">Book Ride</a>
             <a>Learn More</a>
           </div>
         </div>

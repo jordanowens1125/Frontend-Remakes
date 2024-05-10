@@ -10,14 +10,6 @@ export default function Features({ items = [] }) {
         />
         <div className="items">
           <div className="item">
-            <img src="feature1.png" alt="" />
-            <p className="item-h">Select Car</p>
-            <p className="text">
-              We offers a big range of vehicles for all your driving needs. We
-              have the perfect car to meet your needs.
-            </p>
-          </div>
-          <div className="item">
             <img src="feature2.png" alt="" />
             <p className="item-h">Select Car</p>
             <p className="text">
@@ -26,8 +18,16 @@ export default function Features({ items = [] }) {
             </p>
           </div>
           <div className="item">
+            <img src="feature1.png" alt="" />
+            <p className="item-h">Contact Operator</p>
+            <p className="text">
+              We offers a big range of vehicles for all your driving needs. We
+              have the perfect car to meet your needs.
+            </p>
+          </div>
+          <div className="item">
             <img src="feature3.png" alt="" />
-            <p className="item-h">Select Car</p>
+            <p className="item-h">Ready to drive</p>
             <p className="text">
               We offers a big range of vehicles for all your driving needs. We
               have the perfect car to meet your needs.

@@ -1,3 +1,6 @@
+import CaledendarSvgComponent from "../icons/calendar";
+import CarSvgComponent from "../icons/car";
+import LocationSvgComponent from "../icons/location";
 import "./book-car.scss";
 export default function BookCarForm() {
   return (
@@ -9,7 +12,10 @@ export default function BookCarForm() {
             <p>All fields required!</p>
           </div>
           <span className="type">
-            <label htmlFor="type">Select Your Car Type</label>
+            <label htmlFor="type">
+              <CarSvgComponent />
+              Select Your Car Type
+            </label>
             <select>
               <option value="" disabled defaultValue>
                 Select your car type
@@ -24,7 +30,10 @@ export default function BookCarForm() {
             </select>
           </span>
           <span>
-            <label htmlFor="pick-up">Pick-up</label>
+            <label htmlFor="pick-up">
+              <LocationSvgComponent />
+              Pick-up
+            </label>
             <select>
               <option value="" disabled defaultValue>
                 Select pick up location
@@ -35,7 +44,10 @@ export default function BookCarForm() {
             </select>
           </span>
           <span>
-            <label htmlFor="drop-off">Drop Off</label>
+            <label htmlFor="drop-off">
+              <LocationSvgComponent />
+              Drop Off
+            </label>
             <select>
               <option value="" disabled defaultValue>
                 Select drop off location
@@ -46,7 +58,11 @@ export default function BookCarForm() {
             </select>
           </span>
           <span>
-            <label htmlFor="pick-up-date">Pick-up</label>
+            <label htmlFor="pick-up-date">
+              {" "}
+              <CaledendarSvgComponent />
+              Pick-up
+            </label>
             <input type="date" />
           </span>
           <span>
@@ -64,7 +80,10 @@ export default function BookCarForm() {
             </select>
           </span>
           <span>
-            <label htmlFor="drop-off-date">Drop Off</label>
+            <label htmlFor="drop-off-date">
+              <CaledendarSvgComponent />
+              Drop Off
+            </label>
             <input type="date" />
           </span>
           <span>

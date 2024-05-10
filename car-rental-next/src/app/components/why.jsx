@@ -17,7 +17,7 @@ export default function Why() {
               perferendis veritatis quidem, blanditiis maiores eius. Atque
               adipisci minima, vero necessitatibus asperiores perspiciatis!
             </p>
-            <button>Find Details</button>
+            <a className="btn-1" href="#bookcarform">Find Details</a>
           </div>
           <div className="right items">
             <div className="item">

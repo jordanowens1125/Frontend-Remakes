@@ -245,7 +245,7 @@ export default function CarToggle() {
             </div>
           </div>
 
-          <button>Reserve Now</button>
+          <a className="btn-1" href="#bookcarform">Reserve Now</a>
         </div>
       </div>
     </section>
