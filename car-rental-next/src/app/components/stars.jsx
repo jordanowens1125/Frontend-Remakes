@@ -2,7 +2,7 @@ import StarSvgComponent from "../icons/star";
 import "./stars.scss";
 export default function Stars() {
   return (
-    <span>
+    <span className="stars">
       <StarSvgComponent />
       <StarSvgComponent />
       <StarSvgComponent />
