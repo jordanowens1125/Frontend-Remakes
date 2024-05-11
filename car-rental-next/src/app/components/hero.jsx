@@ -1,3 +1,5 @@
+import CheckSvgComponent from "../icons/check";
+import RightArrowSvgComponent from "../icons/right-arrow";
 import "./hero.scss";
 export default function Hero() {
   return (
@@ -13,12 +15,17 @@ export default function Hero() {
             molestias.
           </p>
           <div className="buttons">
-            <a className="btn-1">Book Ride</a>
-            <a>Learn More</a>
+            <a className="btn-1">
+              Book Ride <CheckSvgComponent />
+            </a>
+            <a className="btn-2">
+              Learn More
+              <RightArrowSvgComponent />
+            </a>
           </div>
         </div>
         <div className="right">
-          <img src="hero.png" alt="" />
+          <img src="hero.png" alt="" className="hero"/>
           <img src="hero-bg.png" alt="" className="bg-img" />
         </div>
       </div>

@@ -9,7 +9,7 @@ const RightArrowSvgComponent = ({
     viewBox="0 0 24 24"
   >
     <path
-      stroke="#000"
+      stroke={stroke}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}

@@ -15,17 +15,28 @@
     font-weight: 700;
     grid-column: -1/1;
   }
-  .error {
-    background-color: pink;
+  .error,
+  .success {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8d7da;
+    width: 100%;
     padding: 10px 20px;
     border-radius: 10px;
     font-weight: 500;
-    color: #721c24;
+
     font-size: 1.3rem;
+    .cancel {
+      cursor: pointer;
+    }
+  }
+  .error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  .success {
+    background-color: #d7f8dd;
+    color: #1c7232;
   }
   span {
     display: flex;
@@ -82,9 +93,14 @@
 @media screen and (min-width: 640px) {
   #bookcarform {
     background-image: unset;
+    background: linear-gradient(180deg, #f8f8f8 20%, #fff 80%);
+    padding: 0;
     .container {
       box-shadow: var(--box-shadow);
       background-image: url("https://demo.xpeedstudio.com/carrental/home-v4/wp-content/uploads/sites/5/2020/08/home4-car-book-bg.png");
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.03);
+      border: 2px solid rgb(240, 240, 240);
+      background-color: #fff;
     }
     form {
       display: grid;

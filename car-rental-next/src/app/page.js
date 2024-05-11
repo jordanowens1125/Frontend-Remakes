@@ -10,7 +10,7 @@ import WhyChooseUs from "./components/why";
 export default function Home() {
   return (
     <main>
-      {/* <Hero /> */}
+      <Hero />
       <BookCarForm />
       <Features />
       <CarToggle />

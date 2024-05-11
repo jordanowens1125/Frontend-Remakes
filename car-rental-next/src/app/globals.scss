@@ -94,9 +94,10 @@ button,
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 6px;
+  border: 2px solid transparent;
   svg {
-    width: 20px;
+    width: 35px;
   }
 }
 .btn-1 {
@@ -106,5 +107,18 @@ button,
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   svg {
     color: #fff;
+  }
+}
+
+.btn-2 {
+  color: #fff;
+  background-color: #161616;
+  svg {
+    color: #fff;
+  }
+  &:hover {
+    background-color: transparent;
+    border: 2px solid #161616;
+    color: #161616;
   }
 }
