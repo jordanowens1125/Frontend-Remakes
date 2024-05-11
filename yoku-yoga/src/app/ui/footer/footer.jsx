@@ -21,6 +21,9 @@ export default function Footer() {
                 Vokalia and Consonantia, there live the blind texts. Separated
                 they.
               </p>
+              <a href="https://goodlayers.com/" target="_blank">
+                Designed by Goodlayers
+              </a>
             </div>
 
             <div className="quicklinks">

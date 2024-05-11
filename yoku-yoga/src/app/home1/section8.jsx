@@ -50,8 +50,8 @@ export default function HomeSection8() {
 
   function downOne() {
     if (number - 1 <= -1) {
-      setNumber(5);
-      updatePosition(5);
+      // setNumber(4);
+      // updatePosition(4);
     } else {
       setNumber(number - 1);
       updatePosition(number - 1);

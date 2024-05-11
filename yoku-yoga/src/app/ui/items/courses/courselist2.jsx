@@ -26,7 +26,7 @@ export default function CourseList2({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Dane Smith",
     },
     {
       image: "home1/section3-3.jpg",
@@ -37,7 +37,7 @@ export default function CourseList2({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Luke Wilson",
     },
     {
       image: "home1/section3-4.jpg",
@@ -48,7 +48,7 @@ export default function CourseList2({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Jimmy Cane",
     },
     {
       image: "home1/section3-5.jpg",
@@ -59,7 +59,7 @@ export default function CourseList2({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Lori Luke",
     },
 
     {
@@ -71,7 +71,7 @@ export default function CourseList2({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Smokey Johnson",
     },
     {
       image: "home1/section3-1.jpg",
@@ -82,7 +82,7 @@ export default function CourseList2({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Felix Richards",
     },
     {
       image: "home1/section3-2.jpg",
@@ -93,7 +93,7 @@ export default function CourseList2({
       price: 39,
       lessons: 6,
       students: 67,
-      name: "Jane Smith",
+      name: "Taylor Griggs",
     },
   ],
 }) {
