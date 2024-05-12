@@ -61,10 +61,9 @@ export default function Nav() {
     const headerObserver = new IntersectionObserver(updateNav, {
       root: null,
       threshold: 0,
-      rootMargin: `200px`,
+      rootMargin: `50px`,
     });
     function updateNav(entries) {
-      console.log(1);
       const [entry] = entries;
       const Nav = document.getElementById("nav");
       if (!entry.isIntersecting) {
