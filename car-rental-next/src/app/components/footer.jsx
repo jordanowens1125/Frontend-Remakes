@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="links">
               <a href="">(123) 498-4600</a>
               <a href="">example@carrental.com</a>
-              <a href="https://xpeedstudio.com/">Design by XpeedStudio</a>
+              <a href="https://xpeedstudio.com/" ><b>Design by XspeedStudio</b></a>
             </div>
           </div>
 
