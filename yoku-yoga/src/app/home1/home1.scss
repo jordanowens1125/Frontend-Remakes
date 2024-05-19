@@ -219,8 +219,13 @@
 // ----------------------End of Classes----------------
 
 // ----------------------foundation-----------------------
-// #foundation {
-// }
+#foundation {
+  @media screen and (min-width: 1440px) {
+    .sbs-left {
+      margin: 200px 0;
+    }
+  }
+}
 // ----------------------End of foundation---------------
 
 // ----------------------instructors-----------------------
