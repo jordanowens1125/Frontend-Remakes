@@ -73,6 +73,41 @@ export default function CarToggle() {
           <div className="item">
             <span>
               {" "}
+              <b>$37</b> / rent per day{" "}
+            </span>
+            <div className="row">
+              <p>Model</p>
+              <p>Golf 6</p>
+            </div>
+            <div className="row">
+              <p>Mark</p>
+              <p>Volkswagen</p>
+            </div>
+            <div className="row">
+              <p>Year</p>
+              <p>2008</p>
+            </div>
+            <div className="row">
+              <p>Doors</p>
+              <p>4/5</p>
+            </div>
+            <div className="row">
+              <p>AC</p>
+              <p>Yes</p>
+            </div>
+            <div className="row">
+              <p>Automatic</p>
+              <p>Manual</p>
+            </div>
+            <div className="row">
+              <p>Fuel</p>
+              <p>Diesel</p>
+            </div>
+          </div>
+
+          <div className="item">
+            <span>
+              {" "}
               <b>$30</b> / rent per day{" "}
             </span>
             <div className="row">
@@ -96,8 +131,8 @@ export default function CarToggle() {
               <p>Yes</p>
             </div>
             <div className="row">
+              <p>Transmission</p>
               <p>Automatic</p>
-              <p>Manual</p>
             </div>
             <div className="row">
               <p>Fuel</p>
@@ -112,11 +147,11 @@ export default function CarToggle() {
             </span>
             <div className="row">
               <p>Model</p>
-              <p>BMW</p>
+              <p>320</p>
             </div>
             <div className="row">
               <p>Mark</p>
-              <p>A1</p>
+              <p>BMW</p>
             </div>
             <div className="row">
               <p>Year</p>
@@ -137,41 +172,6 @@ export default function CarToggle() {
             <div className="row">
               <p>Fuel</p>
               <p>Diesel</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <span>
-              {" "}
-              <b>$25</b> / rent per day{" "}
-            </span>
-            <div className="row">
-              <p>Model</p>
-              <p>Audi</p>
-            </div>
-            <div className="row">
-              <p>Mark</p>
-              <p>A1</p>
-            </div>
-            <div className="row">
-              <p>Year</p>
-              <p>2012</p>
-            </div>
-            <div className="row">
-              <p>Doors</p>
-              <p>4/5</p>
-            </div>
-            <div className="row">
-              <p>AC</p>
-              <p>Yes</p>
-            </div>
-            <div className="row">
-              <p>Transmission</p>
-              <p>Manual</p>
-            </div>
-            <div className="row">
-              <p>Fuel</p>
-              <p>Gasoline</p>
             </div>
           </div>
 
