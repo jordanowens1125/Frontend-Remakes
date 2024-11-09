@@ -1,0 +1,75 @@
+.whychooseus1 {
+  background-color: var(--secondary);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  .img-container {
+    display: none;
+  }
+  .group {
+    padding-top: 20px;
+    gap: 0;
+    p {
+      color: inherit;
+      padding: 0;
+    }
+    .item {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      border-bottom: #dbdbdb49 1px solid;
+      padding: 20px 0;
+      .item-h-2 {
+        padding: 0;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      svg {
+        background-color: white;
+        height: 90px;
+        padding: 10px;
+        aspect-ratio: 1;
+      }
+    }
+  }
+
+  @media screen and (min-width: 425px) {
+    .group {
+      .item {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        span.item-h-2 {
+          grid-area: header;
+          padding: 0;
+        }
+        p {
+          grid-area: text;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .img-container {
+      display: block;
+      position: absolute;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-image: url('../../../../public/roof.png');
+      object-fit: contain;
+    }
+  }
+}

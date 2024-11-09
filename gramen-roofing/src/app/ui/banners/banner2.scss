@@ -1,0 +1,74 @@
+.banner2 {
+  width: 100%;
+  --duration: 10s;
+  position: relative;
+  overflow: hidden;
+  .slider {
+    display: flex;
+    width: 100%;
+    height: calc(var(--height) * 1px);
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 10% 90%,
+      transparent
+    );
+  }
+  .slider:hover {
+    span {
+      animation-play-state: paused;
+    }
+  }
+  span {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: var(--height);
+    align-items: center;
+    min-width: calc(var(--width) * var(--quantity));
+    position: absolute;
+    left: 0%;
+    // animation: scrollLeft 20s linear infinite;
+    animation-delay: calc(
+      (var(--duration) / var(--quantity)) *
+        (var(--quantity) - var(--position) * -1s)
+    );
+    font-size: 56px;
+    font-weight: bold;
+    text-transform: uppercase;
+    // put duration and quantity here
+    //duration = first value
+    //quantity is the 2 and 3rd number
+    // dont change -1 at the end
+    animation-delay: calc(20s / 3 * (3 - var(--position)) * -1);
+  }
+
+  svg.text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 70px;
+  }
+
+  .icon {margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  text {
+    fill: none;
+    stroke: var(--secondary);
+    stroke-width: 0.5px;
+    stroke-linejoin: round;
+  }
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -100%;
+  }
+}

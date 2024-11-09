@@ -1,0 +1,81 @@
+.header1white {
+  color: #fff;
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 46px;
+    margin: 10px 0 20px;
+    color: #fff;
+    grid-area: title;
+  }
+  .subtitle {
+    grid-area: subtitle;
+  }
+  span {
+    display: flex;
+    gap: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    align-items: center;
+    .oval {
+      border: #fff 1px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      position: relative;
+      height: 16px;
+      width: 36px;
+    }
+    .oval::before {
+      content: "";
+
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 70%;
+      width: 75%;
+      position: absolute;
+      background-color: #fff;
+      border-radius: inherit;
+    }
+  }
+  button,
+  a {
+    grid-area: button;
+    margin-bottom: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 24px;
+  }
+  p {
+    margin-bottom: 35px;
+    grid-area: text;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header1white {
+    h3 {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header1white {
+    display: grid;
+    grid-template-areas:
+      "subtitle       button"
+      "title          button"
+      "text             text  ";
+
+    button,
+    a {
+      margin-left: auto;
+      margin-top: auto;
+      margin-bottom: 40px;
+    }
+  }
+}

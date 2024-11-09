@@ -1,0 +1,100 @@
+.hero-header {
+  color: #fff;
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 46px;
+    margin: 20px 0 20px;
+    color: #fff;
+    grid-area: title;
+  }
+  .subtitle {
+    grid-area: subtitle;
+  }
+  span {
+    display: flex;
+    gap: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    align-items: start;
+    letter-spacing: 5px;
+    .oval {
+      border: var(--primary) 1px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      position: relative;
+      height: 16px;
+      width: 36px;
+      margin-top: 6px;
+    }
+    .oval::before {
+      content: "";
+
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 70%;
+      width: 75%;
+      position: absolute;
+      background-color: var(--primary);
+      border-radius: inherit;
+    }
+  }
+  button,
+  a {
+    grid-area: button;
+    margin-bottom: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 24px;
+  }
+  p {
+    margin-bottom: 35px;
+    grid-area: text;
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header {
+    h1 {
+      font-size: 64px;
+      line-height: 77px;
+    }
+    p {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero-header {
+    h1 {
+      max-width: 80%;
+    }
+    p {
+      width: 60%;
+    }
+    button,
+    a {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-header {
+    h1 {
+      max-width: 60%;
+    }
+    p {
+      width: 50%;
+    }
+  }
+}

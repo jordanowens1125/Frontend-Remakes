@@ -1,0 +1,43 @@
+.stats {
+  padding: 1rem 0;
+  .group {
+    gap: 1.75rem;
+  }
+  .item {
+    display: grid;
+    grid-template-areas:
+      "svg  stat"
+      "svg  text";
+    grid-template-columns: min-content 1fr;
+    column-gap: 0.8rem;
+    svg {
+      grid-area: svg;
+      height: 65px;
+    }
+    span {
+      grid-area: stat;
+    }
+    p {
+      grid-area: text;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .stats {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .stats {
+    .group {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
