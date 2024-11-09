@@ -1,5 +1,5 @@
 .header1 {
-  h3 {
+  .section-h{
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 46px;
@@ -56,7 +56,7 @@
 
 @media screen and (min-width: 768px) {
   .header1 {
-    h3 {
+    .section-h{
       font-size: 2.8rem;
     }
   }

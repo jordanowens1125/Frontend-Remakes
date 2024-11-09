@@ -1,6 +1,6 @@
 .header1light {
   color: #fff;
-  h3 {
+  .section-h {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 46px;
@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 768px) {
   .header1light {
-    h3 {
+    .section-h {
       font-size: 2.8rem;
     }
   }

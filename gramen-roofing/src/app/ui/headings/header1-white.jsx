@@ -17,7 +17,7 @@ export default function Header1White({
           {span}
         </span>
       )}
-      {header && <h2>{header}</h2>}
+      {header && <h2 className="section-h">{header}</h2>}
 
       {button && <button className={buttonType}>{button}</button>}
       {text && <p>{text}</p>}
