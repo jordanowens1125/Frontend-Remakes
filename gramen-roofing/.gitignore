@@ -8,6 +8,7 @@ Logo
     Wrap with a tag to send to home
     Actual image svg
         https://gramentheme.com/html/gramen/assets/imgs/logo/logo-white.svg
+    Logo on mobile navbar size
 
 Change Icon.ico
 
@@ -38,6 +39,7 @@ faqs
 Optimization for page load
 Proofread
 Generate Sitemap
+LightHouse Score
 
 # dependencies
 /node_modules

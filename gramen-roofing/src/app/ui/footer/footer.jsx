@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-s">
             <p className="logo">
-              <img src={null} alt="Logo"/>
+              <img src={null} alt="Logo" />
             </p>
             <p>
               Use securing confined his shutters. Delightful as he it acceptance
@@ -85,16 +85,16 @@ export default function Footer() {
           <div className="footer-s">
             <p className="footer-h">Our Gallery</p>
             <div className="images">
-              <Link href={"/"}>
+              <Link href={"/"} aria-label="Image 1">
                 <img src={null} alt="" />
               </Link>
-              <Link href={"/"}>
+              <Link href={"/"} aria-label="Image 2">
                 <img src={null} alt="" />
               </Link>
-              <Link href={"/"}>
+              <Link href={"/"} aria-label="Image 3">
                 <img src={null} alt="" />
               </Link>
-              <Link href={"/"}>
+              <Link href={"/"} aria-label="Image 4">
                 <img src={null} alt="" />
               </Link>
             </div>

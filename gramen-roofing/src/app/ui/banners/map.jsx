@@ -8,6 +8,7 @@ export default function MapBanner() {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        title="Location"
       ></iframe>
     </section>
   );

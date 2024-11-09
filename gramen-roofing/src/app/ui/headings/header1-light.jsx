@@ -17,7 +17,7 @@ export default function Header1Light({
           {span}
         </span>
       )}
-      {header && <h3>{header}</h3>}
+      {header && <h2>{header}</h2>}
 
       {button && <button className={buttonType}>{button}</button>}
       {text && <p>{text}</p>}
