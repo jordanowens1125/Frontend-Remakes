@@ -89,9 +89,6 @@ export default function Reviews() {
           </div>
           <QuotationSvgComponent />
         </div>
-
-        
-
       </div>
     </div>
   );
