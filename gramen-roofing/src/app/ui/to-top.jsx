@@ -26,6 +26,7 @@ export default function ToTop() {
     <a
       href="#top"
       id="to-top"
+      aria-label="Back to top"
       onDragStart={() => {
         return false;
       }}
