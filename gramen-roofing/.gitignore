@@ -3,9 +3,41 @@
 https://www.battalionroofinghouston.net/services
 
 TO Do 
-Logo link
-https://gramentheme.com/html/gramen/assets/imgs/logo/logo-white.svg
+
+Logo
+    Wrap with a tag to send to home
+    Actual image svg
+        https://gramentheme.com/html/gramen/assets/imgs/logo/logo-white.svg
+
+Change Icon.ico
+
+footer 
+    images
+    links
+    styling for fonts
+    icons styling
+    on hover change link color to primary
+
+nav
+    on link hover change link color to primary
+
+about us 1 spacing on group
+
+another projects section
+
+image of map
+
+contact form that sends info to email
+    links & text for phone,email location in google maps
+
 Blog group
+
+faqs 
+    svg color changes on hover to unwanted color
+
+Optimization for page load
+Proofread
+Generate Sitemap
 
 # dependencies
 /node_modules

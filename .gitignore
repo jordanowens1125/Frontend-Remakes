@@ -1,0 +1,53 @@
+
+Compartmentalize designs make the smallest factors
+    Spacing
+    Fonts
+        Headers
+        Item-h
+    Colors
+    Icons
+    Logo
+Mid Level
+    Buttons
+    Input
+    Labels
+    Floating Boxes
+    Items
+        Item-h
+        Layout
+    Spacing
+    Groups
+        Items
+    Header components
+High level
+    Forms
+    Breadcrumbs
+    Navbar
+    Hero
+    Sections
+    SBS
+    Footer
+
+
+Make starter folder
+
+nav
+    make nav components where you just input link list with sublinks
+    recursively
+
+    More layouts of navbars
+
+Sections    
+    SBS sections
+
+Containers  
+    Make more image containers
+
+Icons
+    make so i can change icon size using its class with prop as element 
+
+
+Practice with astro to generate static page components that will
+still allow for efficiency
+
+
