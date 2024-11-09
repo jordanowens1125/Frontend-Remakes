@@ -1,0 +1,74 @@
+#breadcrumb {
+  background-image: url("../../../../public/breadcrumb.png");
+  min-height: 240px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  color: #fff;
+  .container {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .header {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    svg {
+      width: 40px;
+    }
+    p {
+      color: var(--primary);
+    }
+  }
+  a:hover {
+    color: var(--primary);
+  }
+}
+
+@media screen and (min-width: 0) {
+  #breadcrumb {
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #breadcrumb {
+    min-height: 420px;
+    .header {
+      font-size: 55px;
+    }
+    .container {
+      align-items: start;
+    }
+    .img-container {
+      display: block;
+      position: absolute;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-image: url("../../../../public/roof.png");
+      object-fit: contain;
+    }
+  }
+}
