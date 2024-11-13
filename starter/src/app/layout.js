@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 import Footer from "./ui/footer/footer";
 import Nav from "./ui/nav/nav";
 import ToTop from "./ui/to-top";
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <div id="top"></div>
         <ToTop />
-        <Nav />
+        {/* <Nav /> */}
 
         {children}
         <Footer />

@@ -1,5 +1,59 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+TO DO List
+
+    Create breadcrumb for all pages dynamically
+        https://www.openstatus.dev/blog/dynamic-breadcrumb-nextjs
+
+
+    Things we need alot more of for starter
+        banners
+        navbars
+        footers
+        image container
+        contact forms
+        floating boxes
+    
+    
+        groups
+            all item layouts should be easy to find it make 
+                10 general layouts for all 
+                    regular #2
+                        centered
+                        left/right
+                    With & w/o info
+                        info float
+                    With animated links
+                    With/o floating element like icon or count
+                    left right #3
+                        Svg item
+                        Svg text
+                    has row
+                        space between row #4
+                        no space between row
+                    has bg image
+                    img on left side, info right side #1
+                        img info
+                    text separated from info #5
+
+            reviews - 3 solid reviews that will be reused
+
+
+        breadcrumbs
+            change image
+            change size
+        
+
+    Get to the point where we should only be changing
+        fonts - headers, p, sub-h,item-h,section-h,
+        colors - in global
+        input - color, bg , padding
+        buttons - padding, spacing, color
+        spacing - consistent across
+        
+
+
+
 # dependencies
 /node_modules
 /.pnp
