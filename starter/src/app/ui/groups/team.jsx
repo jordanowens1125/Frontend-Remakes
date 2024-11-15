@@ -1,4 +1,4 @@
-import { imgteam1, imgteam2, imgteam3, imgteam4 } from "@/app/constants/images";
+import { imgteam1, imgteam2, imgteam3, imgteam4 } from "@/app/constants/sources";
 import "./team.scss";
 import LinksGroup from "./links";
 

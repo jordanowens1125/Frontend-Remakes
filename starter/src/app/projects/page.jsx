@@ -1,5 +1,5 @@
 import BreadCrumb from "../ui/breadcrumb/breadcrumb";
-import Projects2 from "../ui/groups/projects2";
+import Projects2 from "../ui/groups/projects1";
 
 export default function Page() {
   return (

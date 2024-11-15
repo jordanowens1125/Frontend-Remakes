@@ -2,7 +2,7 @@ import {
   imgcontainer2IMG_A,
   imgcontainer2IMG_B,
   imgcontainer2IMG_C,
-} from "@/app/constants/images";
+} from "@/app/constants/sources";
 import "./img-container2.scss";
 
 export default function ImgContainer2() {

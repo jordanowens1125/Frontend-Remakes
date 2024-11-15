@@ -1,6 +1,6 @@
 import PointOnMapSvgComponent from "@/app/icons/pointonmap";
 import Form2 from "../form/form2";
-import Header1 from "../headings/header1";
+import Header1 from "../headers/header1";
 import "./contact.scss";
 
 export default function Contact() {

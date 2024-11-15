@@ -6,7 +6,7 @@ import {
   imgservices4,
   imgservices5,
   imgservices6,
-} from "@/app/constants/images";
+} from "@/app/constants/sources";
 
 export default function Services2Group({
   items = [

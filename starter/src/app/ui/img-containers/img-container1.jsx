@@ -1,4 +1,4 @@
-import { imgcontainer1IMG_A, imgcontainer1IMG_B } from "@/app/constants/images";
+import { imgcontainer1IMG_A, imgcontainer1IMG_B } from "@/app/constants/sources";
 import FloatingBox1 from "../floating-boxes/floatingbox1";
 import "./img-container1.scss";
 

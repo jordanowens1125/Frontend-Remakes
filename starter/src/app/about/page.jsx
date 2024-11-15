@@ -1,5 +1,3 @@
-import Banner3 from "../ui/banners/banner4";
-import LogoBanner1 from "../ui/banners/logobanner1";
 import BreadCrumb from "../ui/breadcrumb/breadcrumb";
 import StatsGroup from "../ui/groups/stats";
 import HowItWorks from "../ui/section/howitworks";
@@ -14,12 +12,10 @@ export default function Page() {
       <OurStory />
       <Whychooseus />
       <HowItWorks />
-      <Banner3 />
       <OurTeam />
       <section className="container">
         <StatsGroup />
       </section>
-      <LogoBanner1 />
     </main>
   );
 }

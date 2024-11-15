@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <div id="top"></div>
         <ToTop />
-        {/* <Nav /> */}
+        <Nav />
 
         {children}
         <Footer />

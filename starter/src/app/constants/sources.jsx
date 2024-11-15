@@ -1,6 +1,9 @@
-const LOGO = "../../";
+const LOGO = "logo.png";
 
-const HEROIMG = "hero.jfif";
+const HEROVIDEO =
+  "https://www.youtube-nocookie.com/embed/iYpIHWOCB2o?controls=0&rel=0&playsinline=1&widget_referrer=https%3A%2F%2Fwww.roofixer.oxacor.com%2Ftemplate-kit%2Fabout%2F&enablejsapi=1&origin=https%3A%2F%2Fwww.roofixer.oxacor.com&widgetid=1?autoplay=1";
+// https://www.youtube.com/watch?v=iYpIHWOCB2o
+const HEROIMG = "hero.jpg";
 
 const imgcontainer1IMG_A = "imgcontainers/imgcontainer1a.jfif";
 const imgcontainer1IMG_B = "imgcontainers/imgcontainer1b.jfif";
@@ -24,7 +27,7 @@ const imgteam5 = "team/5.jfif";
 const imgteam6 = "team/6.jfif";
 
 export {
-  HEROIMG,
+  HEROVIDEO,HEROIMG,
   imgcontainer1IMG_A,
   imgcontainer1IMG_B,
   imgcontainer2IMG_A,

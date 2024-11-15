@@ -1,4 +1,4 @@
-import { HEROIMG } from "@/app/constants/images";
+import { HEROIMG } from "@/app/constants/sources";
 import HeroHeader from "../headers/hero-header";
 import "./hero.scss";
 

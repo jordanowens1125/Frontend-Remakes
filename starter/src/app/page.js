@@ -1,5 +1,3 @@
-import Design from "./design/design";
-import Banner4 from "./ui/banners/banner4";
 import Hero from "./ui/hero/hero";
 import HowItWorks from "./ui/section/howitworks";
 import OurServices from "./ui/section/ourservices";
