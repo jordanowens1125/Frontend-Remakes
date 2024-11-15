@@ -1,5 +1,5 @@
 import "./floatingbox5.scss";
-import HammerSVGComponent from "@/app/icons/hammer";
+import HammerSVGComponent from "@/app/svgs/hammer";
 
 export default function FloatingBox5({
   icon = <HammerSVGComponent />,

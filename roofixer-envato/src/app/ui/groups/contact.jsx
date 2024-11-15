@@ -1,7 +1,7 @@
 import "./contact.scss";
-import PhoneSvgComponent from "@/app/icons/phone";
-import PointOnMapSvgComponent from "@/app/icons/pointonmap";
-import SendSvgComponent from "@/app/icons/send";
+import PhoneSvgComponent from "@/app/svgs/phone";
+import PointOnMapSvgComponent from "@/app/svgs/pointonmap";
+import SendSvgComponent from "@/app/svgs/send";
 
 export default function ContactGroup({
   items = [

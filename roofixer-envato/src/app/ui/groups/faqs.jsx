@@ -1,5 +1,5 @@
 import FAQSLIST from "@/app/constants/faqs";
-import QuotationSvgComponent from "@/app/icons/quotations";
+import QuotationSvgComponent from "@/app/svgs/quotations";
 import "./faqs.scss";
 
 export default function FAQSGroup() {

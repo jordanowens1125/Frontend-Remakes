@@ -1,5 +1,5 @@
-import HammerSVGComponent from "../../icons/hammer";
-import SVGHammer from "../../icons/hammer";
+import HammerSVGComponent from "../../svgs/hammer";
+import SVGHammer from "../../svgs/hammer";
 import "./services1.scss";
 
 export default function Services1Group({

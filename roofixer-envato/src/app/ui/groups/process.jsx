@@ -1,4 +1,4 @@
-import HammerSVGComponent from "@/app/icons/hammer";
+import HammerSVGComponent from "@/app/svgs/hammer";
 import "./process.scss";
 
 export default function ProcessGroup({

@@ -1,5 +1,5 @@
 import "./item9.scss";
-import CheckSvgComponent from "@/app/icons/check";
+import CheckSvgComponent from "@/app/svgs/check";
 
 export default function Item9({
   svg = <CheckSvgComponent />,
