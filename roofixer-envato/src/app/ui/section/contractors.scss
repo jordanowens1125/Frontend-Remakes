@@ -2,6 +2,13 @@
   padding: var(--containerPaddingVert) 0;
   display: flex;
   flex-direction: column;
+  .header2 {
+    padding: var(--containerPadding);
+    padding-bottom: 0;
+  }
+  .groups {
+    position: relative;
+  }
   .group1,
   .group2 {
     display: flex;
@@ -13,9 +20,12 @@
   }
   .group2 {
     background-color: var(--grey);
-    grid-area: g3;gap: 30px;
+    grid-area: g3;
+    gap: 30px;
+
     .item {
-      display: flex;gap: 16px;
+      display: flex;
+      gap: 16px;
       .info {
         display: flex;
         flex-direction: column;
@@ -79,7 +89,8 @@
       }
     }
     .group3 {
-      grid-template-columns: repeat(4, 1fr);padding: 0;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0;
     }
   }
 }

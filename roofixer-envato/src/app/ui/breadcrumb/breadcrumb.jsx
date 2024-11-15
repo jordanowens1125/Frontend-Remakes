@@ -1,6 +1,7 @@
 import DoubleChevronSvgComponent from "@/app/icons/double-chevron";
 import "./breadcrumb.scss";
 import Link from "next/link";
+import BottomTriangleElement from "../img-containers/bottomtriangle";
 export default function BreadCrumb({ page }) {
   return (
     <section id="breadcrumb">
@@ -13,6 +14,7 @@ export default function BreadCrumb({ page }) {
         </span>
       </div>
       <div className="img-container"></div>
+      <BottomTriangleElement/>
     </section>
   );
 }

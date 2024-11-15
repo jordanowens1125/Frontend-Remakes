@@ -1,12 +1,17 @@
 .header2 {
   width: 100%;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   .sub-h {
     grid-area: subh;
   }
   .section-h-2 {
     margin-top: 0.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     grid-area: header;
     span {
       color: var(--primary);
@@ -24,21 +29,5 @@
   .margin-class {
     margin-bottom: 10px;
     grid-area: btn;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns:2.8fr 1fr;
-    grid-template-areas:
-      "subh   ."
-      "header btn"
-      "text   btn"
-      "bottom   bottom";
-
-    .margin-class {
-      margin: auto;
-      margin-top: 0;
-      margin-right: 0;
-    }
   }
 }

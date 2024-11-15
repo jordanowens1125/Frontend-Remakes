@@ -2,6 +2,7 @@ import "./contractors.scss";
 import Header2 from "../headers/header2";
 import ImgContainer1 from "../img-containers/img-container1";
 import HammerSVGComponent from "@/app/icons/hammer";
+import TopTriangleElement from "../img-containers/toptriangle";
 
 export default function ContractorsSection({
   group2 = [
@@ -51,6 +52,7 @@ export default function ContractorsSection({
         text="Our range of roofing products provides you with a one-stop shopping center for all roofing needs"
       />
       <div className="groups">
+        <TopTriangleElement/>
         <ImgContainer1 />
         <div className="group1 group">
           <h3>We are committed to roofing excellence</h3>

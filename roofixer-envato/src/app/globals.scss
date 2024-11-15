@@ -13,7 +13,6 @@
   --secondary2: #fcece4;
   --footerBGColor: #102039;
 
-
   --grey: #f3f6ff;
 
   --font-color: #787878;
@@ -185,6 +184,11 @@ li {
   @media screen and (min-width: 768px) {
     font-size: 48px;
   }
+}
+
+.section-h-2 {
+  font-size: 2rem;
+  color: var(--header-color);
 }
 
 .sub-h {

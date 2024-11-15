@@ -2,6 +2,7 @@ import HammerSVGComponent from "@/app/icons/hammer";
 import Header1 from "../headers/header1";
 import "./process.scss";
 import TopTriangleElement from "../img-containers/toptriangle";
+import { GREY } from "@/app/constants/colors";
 
 export default function ProcessSection({
   items = [
@@ -24,7 +25,7 @@ export default function ProcessSection({
 }) {
   return (
     <section id="process">
-      <TopTriangleElement bgColor="pink"/>
+      <TopTriangleElement bgColor={GREY} />
       <div className="container">
         <Header1
           span={"Our Process"}
