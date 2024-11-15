@@ -1,0 +1,20 @@
+.img-container1 {
+  position: relative;
+  width: 100%;
+  height: 100%;display: flex;
+  .img-1 {
+    height: 380px;
+  }
+  .floatingbox1 {
+    position: absolute;
+    left: 5%;
+
+    bottom: 5%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .img-1 {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.teamgroup {
+  gap: 40px;
+  .item {
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    box-shadow: var(--box-shadow);
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      padding: 28px 16px;
+      border-radius: 0 0 8px 8px;
+      left: 0;
+      right: 0;
+    }
+    .text {
+      color: #fff;
+    }
+    .row {
+      justify-content: space-between;
+      align-items: start;
+    }
+    img {
+      height: 355px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teamgroup {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .teamgroup {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

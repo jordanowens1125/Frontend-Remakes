@@ -1,0 +1,63 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+https://preview.themeforest.net/item/roofixer-roofing-service-elementor-pro-template-kit/full_screen_preview/42984495?_ga=2.21443773.743851315.1730776625-1575720681.1729700915&_gac=1.18979530.1730906082.CjwKCAiAxKy5BhBbEiwAYiW--zoUoRMpZe4T-YwAwlbtp_GZyuDXpqTzpWzmk9jfiDKMaKPCCQv3phoCgK4QAvD_BwE
+
+To Do
+    Buttons on hover
+        some of theme disappear due to backgrounds
+
+    Constants
+        Company
+        Colors
+
+    Sections
+        About Page Banner
+        Contact Page maybe
+        New Footer
+        CMS Content Page
+        To do button color and hover 
+
+    Other stuff
+        Optimization
+        Sitemap
+        Company Info
+        Etc
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,11 @@
+.contact-group {
+  gap: 20px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    a:hover{
+      color: var(--primary);
+    }
+  }
+}

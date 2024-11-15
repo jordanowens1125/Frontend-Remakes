@@ -1,0 +1,16 @@
+.bottomtriangle {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  transform: translateY(1%) translateX(0%);
+  // transform: rotate(180deg);
+  width: 100%;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: var(--bgColor);
+  height: 100px;
+  z-index: -1;
+}

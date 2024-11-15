@@ -1,5 +1,7 @@
 const LOGO = "../../";
 
+const HEROIMG = "hero.jfif";
+
 const imgcontainer1IMG_A = "imgcontainers/imgcontainer1a.jfif";
 const imgcontainer1IMG_B = "imgcontainers/imgcontainer1b.jfif";
 
@@ -22,6 +24,7 @@ const imgteam5 = "team/5.jfif";
 const imgteam6 = "team/6.jfif";
 
 export {
+  HEROIMG,
   imgcontainer1IMG_A,
   imgcontainer1IMG_B,
   imgcontainer2IMG_A,

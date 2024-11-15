@@ -1,0 +1,60 @@
+.banner1 {
+  background-image: url("../../../../public/breadcrumb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 2rem 0;
+  // .img-container {
+  //   background-image: url("../../../../public/wave.png");
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   background-repeat: no-repeat;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-position: top right;
+  //   background-size: contain;
+  // }
+  .group {
+    gap: 20px;
+  }
+  input {
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+  }
+  button,
+  input {
+    border-radius: 28px;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .header1white {
+    grid-area: header;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner1 {
+    .container {
+      display: grid;
+      grid-template-areas:
+        ". header"
+        ". group";
+      grid-template-columns: 1fr min-content;
+    }
+
+    .group {
+      grid-area: group;
+      flex-direction: row;
+      justify-content: end;
+    }
+    button,
+    input {
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+}

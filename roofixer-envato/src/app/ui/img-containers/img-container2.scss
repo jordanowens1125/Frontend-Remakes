@@ -1,0 +1,25 @@
+.img-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: var(--maxContainerWidth);
+  img {
+    border-radius: 12px 12px 0 0;
+    min-height: 315px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img {
+      height: 326px;
+      margin-top: auto;
+    }
+    .img-2 {
+      height: 390px;
+    }
+    .img-3 {
+      height: 456px;
+    }
+  }
+}

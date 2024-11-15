@@ -1,0 +1,33 @@
+.header1 {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .sub-h {
+    grid-area: subh;
+    margin-bottom: 20px;
+  }
+  .section-h-1 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    grid-area: header;
+    span {
+      color: var(--primary);
+    }
+  }
+  .text {
+    margin-top: 30px;
+    grid-area: text;
+  }
+  @media screen and (min-width: 768px) {
+    .text {
+      width: 85%;
+    }
+  }
+}
+.row {
+  grid-area: btn;
+}

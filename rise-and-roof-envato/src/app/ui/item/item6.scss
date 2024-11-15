@@ -1,0 +1,27 @@
+.item6 {
+  display: flex;
+  flex-direction: column;
+  .info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+  }
+}
+
+.item6::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #000000
+  );
+  opacity: 0.4;
+}

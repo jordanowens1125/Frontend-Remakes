@@ -1,0 +1,39 @@
+.servicegroup2 {
+  gap: 20px;
+
+  .item {
+    display: grid;
+    grid-template-rows: 1fr 0.4fr;
+    border: 1px solid #cfd8e3;
+    overflow: hidden;
+  }
+  .img-container {
+    overflow: hidden;
+  }
+  img {
+    transition: 0.4s;
+  }
+  img:hover {
+    transform: scale(1.15);
+  }
+  .info {
+    padding: 25px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+  }
+  .align {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

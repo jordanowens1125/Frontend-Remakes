@@ -1,0 +1,22 @@
+#ourservices {
+  background-color: var(--grey);
+  .row {
+    margin-top: 40px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    .small-row {
+      justify-content: center;
+    }
+  }
+  button,
+  a {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    button,
+    a {
+      width: fit-content;
+    }
+  }
+}

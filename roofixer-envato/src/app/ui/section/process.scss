@@ -1,0 +1,70 @@
+#process {
+  .group {
+    gap: 20px;
+    color: #fff;
+    .item {
+      min-height: 340px;
+      padding: 16px 16px 40px 16px;
+      background-color: var(--primary);
+      align-items: center;
+      justify-content: end;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .count {
+      position: absolute;
+      left: 1%;
+      top: 10%;
+      background-color: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      text-align: center;
+      width: 200%;
+      text-transform: uppercase;
+      transform: translateY(-50%) translateX(-50%) translateX(35px)
+        rotate(-45deg);
+      span {
+        margin: 0;
+        line-height: unset;
+        padding: 4px 0;
+        display: flex;
+        gap: 3px;
+      }
+      span:before {
+        display: block;
+        content: "Step";
+      }
+    }
+    span {
+      margin-bottom: 12px;
+    }
+    span,
+    .text,
+    .count {
+      color: inherit;
+    }
+    svg {
+      margin-bottom: 24px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      .item {
+        padding: 24px 30px 40px 30px;
+      }
+    }
+  }
+}
+#process::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

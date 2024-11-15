@@ -1,0 +1,24 @@
+.faqsgroup {
+  gap: 30px;
+  .item {
+    display: flex;
+    gap: 16px;
+    background-color: var(--grey);
+    padding: 32px 24px;
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .item {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

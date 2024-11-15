@@ -1,0 +1,21 @@
+.checkgroup {
+  gap: 10px;
+  margin-bottom: 20px;
+  .item {
+    gap: 10px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    flex-direction: row;
+    // svg {
+    //   margin-top: 3px;
+    // }
+  }
+}
+
+// @media screen and (min-width: 1024px) {
+//   .checkgroup {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }

@@ -1,0 +1,36 @@
+.reviews {
+  display: grid;
+  gap: 32px;
+  .item {
+    padding: 32px;
+    box-shadow: var(--box-shadow);
+    * {
+      margin: auto;
+    }
+    svg {
+      grid-area: svg;
+      margin-bottom: 25px;
+    }
+    h3 {
+      grid-area: header;
+    }
+    .subh {
+      grid-area: subh;
+    }
+    .text {
+      grid-area: text;
+      margin-bottom: 20px;
+    }
+  }
+
+  .item.aligned {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

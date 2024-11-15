@@ -1,0 +1,42 @@
+.img-container1 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+  .img-1 {
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+  }
+  .img-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-20%);
+    width: 90%;
+    margin: auto;
+    height: 257px;
+    border: 12px solid white;
+    box-shadow: var(--box-shadow);
+  }
+  .floatingbox1 {
+    position: absolute;
+    right: 2.5%;
+    top: 50%;
+    transform: translateY(60%);
+  }
+  @media screen and (min-width: 425px) {
+    .img-2 {
+      margin-left: 2.5%;
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .img-1 {
+      height: 100%;
+    }
+    .img-2 {
+      height: 400px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+#contractors {
+  padding: var(--containerPaddingVert) 0;
+  display: flex;
+  flex-direction: column;
+  .group1,
+  .group2 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary2);
+    grid-area: g2;
+    padding: 40px;
+    gap: 15px;
+  }
+  .group2 {
+    background-color: var(--grey);
+    grid-area: g3;gap: 30px;
+    .item {
+      display: flex;gap: 16px;
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      svg {
+        margin-bottom: 16px;
+      }
+      .item-h-2 {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .group3 {
+    padding: 20px;
+    grid-area: g4;
+    gap: 0;
+    .item {
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+      box-shadow: var(--box-shadow);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: var(--containerPadding);
+    max-width: var(--maxContainerWidth);
+    .group1,
+    .group2 {
+      padding: 60px;
+    }
+    .group2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .group3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .groups {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "g1 g2 g3"
+        "g4 g4 g4";
+    }
+    .group2 {
+      display: flex;
+      flex-direction: column;
+      padding-top: 80px;
+      .item {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    .group3 {
+      grid-template-columns: repeat(4, 1fr);padding: 0;
+    }
+  }
+}
