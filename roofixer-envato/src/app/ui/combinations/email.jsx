@@ -1,5 +1,5 @@
 import COMPANYINFO from "@/app/constants/info";
-import SendSvgComponent from "@/app/icons/send";
+import SendSvgComponent from "@/app/svgs/send";
 
 export default function SendEmail() {
   return (

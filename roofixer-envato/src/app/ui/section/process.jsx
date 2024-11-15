@@ -1,4 +1,4 @@
-import HammerSVGComponent from "@/app/icons/hammer";
+import HammerSVGComponent from "@/app/svgs/hammer";
 import Header1 from "../headers/header1";
 import "./process.scss";
 import TopTriangleElement from "../img-containers/toptriangle";

@@ -4,7 +4,6 @@ import OurServices from "./ui/section/ourservices";
 import ProcessSection from "./ui/section/process";
 import ProjectSection from "./ui/section/projectSection";
 import TestimonialsSection from "./ui/section/testimonials";
-import Whychooseus from "./ui/section/whychooseus";
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
-import HammerSVGComponent from "@/app/icons/hammer";
+import HammerSVGComponent from "@/app/svgs/hammer";
 import "./features1.scss";
-import PointOnMapSvgComponent from "@/app/icons/pointonmap";
+import PointOnMapSvgComponent from "@/app/svgs/pointonmap";
 
 export default function Features1({
   features = [

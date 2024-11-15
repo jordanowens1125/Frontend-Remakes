@@ -1,5 +1,5 @@
 import COMPANYINFO from "@/app/constants/info";
-import PhoneSvgComponent from "@/app/icons/phone";
+import PhoneSvgComponent from "@/app/svgs/phone";
 
 export default function Call() {
   return (

@@ -1,4 +1,4 @@
-import QuotationSvgComponent from "@/app/icons/quotations";
+import QuotationSvgComponent from "@/app/svgs/quotations";
 import "./reviews.scss";
 
 export default function ReviewsGroup({

@@ -1,10 +1,10 @@
-import DoubleChevronSvgComponent from "@/app/icons/double-chevron";
+import DoubleChevronSvgComponent from "@/app/svgs/double-chevron";
 import "./footer.scss";
 import Link from "next/link";
-import TwitterComponent from "@/app/icons/twitter";
-import LinkedinSvgComponent from "@/app/icons/linkedin";
-import YoutubeSvgComponent from "@/app/icons/youtube";
-import SkypeSvgComponent from "@/app/icons/skype";
+import TwitterComponent from "@/app/svgs/twitter";
+import LinkedinSvgComponent from "@/app/svgs/linkedin";
+import YoutubeSvgComponent from "@/app/svgs/youtube";
+import SkypeSvgComponent from "@/app/svgs/skype";
 import MapBanner from "../banners/map";
 import Banner1 from "../banners/banner1";
 

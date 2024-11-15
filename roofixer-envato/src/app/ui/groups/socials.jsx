@@ -1,7 +1,7 @@
 import "./socials.scss";
-import LinkedinSvgComponent from "@/app/icons/linkedin";
-import SkypeSvgComponent from "@/app/icons/skype";
-import TwitterComponent from "@/app/icons/twitter";
+import LinkedinSvgComponent from "@/app/svgs/linkedin";
+import SkypeSvgComponent from "@/app/svgs/skype";
+import TwitterComponent from "@/app/svgs/twitter";
 
 export default function SocialsGroup({
   items = [
