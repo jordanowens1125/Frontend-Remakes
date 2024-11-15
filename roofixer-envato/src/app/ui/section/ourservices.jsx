@@ -3,11 +3,13 @@ import Call from "../combinations/call";
 import Services2Group from "../groups/services2";
 import Header1 from "../headers/header1";
 import TriangleElement from "../img-containers/toptriangle";
+import { GREY } from "@/app/constants/colors";
 
-export default function OurServices() {
+export default function OurServices({ triangle = true, bgColor = GREY }) {
   return (
-    <section id="ourservices">
-      <TriangleElement />
+    <section id="ourservices" style={{ "--bgColor": bgColor }}>
+      {triangle && <TriangleElement />}
+
       <div className="container">
         <Header1
           span={"Our Services"}

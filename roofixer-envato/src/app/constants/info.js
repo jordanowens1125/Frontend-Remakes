@@ -1,9 +1,9 @@
 const COMPANYINFO = {
   name: "",
   emailName: "info@example.com",
-  emailLink: "",
+  emailLink: "mailto:mymail@somemail.com",
   phoneNumber: "+1 (123) 456 7890",
-  phoneNumberLink: "",
+  phoneNumberLink: "tel:+442071234567",
   location: "",
   locationLink: "",
   LOGO1: "",

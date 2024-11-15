@@ -1,4 +1,4 @@
-const LOGO = "../../";
+const LOGO = "logo.png";
 
 const HEROVIDEO =
   "https://www.youtube-nocookie.com/embed/iYpIHWOCB2o?controls=0&rel=0&playsinline=1&widget_referrer=https%3A%2F%2Fwww.roofixer.oxacor.com%2Ftemplate-kit%2Fabout%2F&enablejsapi=1&origin=https%3A%2F%2Fwww.roofixer.oxacor.com&widgetid=1?autoplay=1";

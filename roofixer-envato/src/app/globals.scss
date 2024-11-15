@@ -4,7 +4,7 @@
   --maxContainerWidth: 1200px;
 
   --containerPaddingVert: 3rem;
-  --containerPaddingHorizontal: 1rem;
+  --containerPaddingHorizontal: 1.5rem;
   --containerPadding: var(--containerPaddingVert)
     var(--containerPaddingHorizontal);
 
@@ -372,6 +372,7 @@ button,
 }
 .btn-1:hover {
   background-color: transparent;
+  border-color: var(--primary);
   color: var(--primary);
 }
 
@@ -379,7 +380,7 @@ button,
   background-color: var(--secondary);
 }
 .btn-2:hover {
-  background-color: transparent;
+  background-color: #fff;
   color: var(--secondary);
 }
 
@@ -416,8 +417,8 @@ button,
     color: var(--primary);
     fill: none;
     stroke: var(--primary);
-    height: 30px;
-    width: 24px;
+    height: 24px;
+    width: 30px;
   }
 }
 

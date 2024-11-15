@@ -1,7 +1,6 @@
 import Features1 from "../groups/features1";
 import Header1 from "../headers/header1";
 import ImgContainer1 from "../img-containers/img-container1";
-import TriangleElement from "../img-containers/toptriangle";
 
 import "./about.scss";
 

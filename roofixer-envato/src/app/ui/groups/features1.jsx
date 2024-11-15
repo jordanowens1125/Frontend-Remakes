@@ -1,3 +1,4 @@
+import HammerSVGComponent from "@/app/icons/hammer";
 import "./features1.scss";
 import PointOnMapSvgComponent from "@/app/icons/pointonmap";
 
@@ -6,7 +7,7 @@ export default function Features1({
     {
       header: "We work all over America",
       text: "Lorem ipsum dolor sit amet elit tellus luctus nec ullamcorper mattis,",
-      icon: <PointOnMapSvgComponent />,
+      icon: <HammerSVGComponent />,
     },
     {
       header: "All types of work",
@@ -25,7 +26,7 @@ export default function Features1({
     },
   ],
   itemHeaderClass = "item-h-2",
-  iconClass = "icon-3",
+  iconClass = "icon-1",
 }) {
   return (
     <ul className="features1group group">

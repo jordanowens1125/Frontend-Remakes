@@ -1,11 +1,11 @@
 import BreadCrumb from "../ui/breadcrumb/breadcrumb";
-import Services2 from "../ui/groups/services2";
+import OurServices from "../ui/section/ourservices";
 
 export default function Page() {
   return (
-    <main>
+    <main id="services-page">
       <BreadCrumb page={"Services"} />
-      <Services2 />
+      <OurServices triangle={false} bgColor="white" />
     </main>
   );
 }

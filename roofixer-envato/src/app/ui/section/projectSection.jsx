@@ -1,13 +1,14 @@
+import { GREY } from "@/app/constants/colors";
 import Call from "../combinations/call";
 import Projects1Group from "../groups/projects1";
 import Header1 from "../headers/header1";
 import TopTriangleElement from "../img-containers/toptriangle";
 import "./projectSection.scss";
 
-export default function ProjectSection() {
+export default function ProjectSection({ triangle = true, bgColor = GREY }) {
   return (
-    <section id="projects">
-      <TopTriangleElement />
+    <section id="projects" style={{ "--bgColor": bgColor }}>
+      {triangle && <TopTriangleElement />}
       <div className="container">
         <Header1
           span={"Projects"}
