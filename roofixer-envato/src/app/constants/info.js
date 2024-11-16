@@ -1,5 +1,6 @@
 const COMPANYINFO = {
-  name: "",
+  name: "Company Name",
+  description: "Company Description",
   emailName: "info@example.com",
   emailLink: "mailto:mymail@somemail.com",
   phoneNumber: "+1 (123) 456 7890",
