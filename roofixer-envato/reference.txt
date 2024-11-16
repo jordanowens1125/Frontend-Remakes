@@ -16,10 +16,9 @@ To Do
 
     Sections
         About Page Banner
-        Contact Page maybe
+        Contact Page
         New Footer
         CMS Content Page
-        To do button color and hover 
 
     Other stuff
         Optimization
