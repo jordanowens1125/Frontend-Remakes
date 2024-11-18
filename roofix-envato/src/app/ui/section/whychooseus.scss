@@ -1,0 +1,16 @@
+#whychooseus {
+  .sbs {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1024px) {
+    .sbs {
+      display: grid;
+      grid-template-columns: 0.8fr 1fr;
+      gap: 20px;
+    }
+    .container:first-of-type {
+      order: 2;
+    }
+  }
+}
