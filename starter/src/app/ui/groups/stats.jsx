@@ -1,8 +1,8 @@
-import HouseSvgComponent from "@/app/icons/house";
+import HouseSvgComponent from "@/app/svgs/house";
 import "./stats.scss";
-import RoofSvgComponent from "@/app/icons/roof";
-import TapeSvgComponent from "@/app/icons/tape";
-import WorkerSvgComponent from "@/app/icons/worker";
+import RoofSvgComponent from "@/app/svgs/roof";
+import TapeSvgComponent from "@/app/svgs/tape";
+import WorkerSvgComponent from "@/app/svgs/worker";
 
 export default function StatsGroup({
   items = [

@@ -1,4 +1,4 @@
-import DoubleChevronSvgComponent from "@/app/icons/double-chevron";
+import DoubleChevronSvgComponent from "@/app/svgs/double-chevron";
 import "./breadcrumb.scss";
 import Link from "next/link";
 export default function BreadCrumb({ page }) {

@@ -3,6 +3,11 @@ https://preview.themeforest.net/item/roofixer-roofing-service-elementor-pro-temp
 
 
 To Do
+
+    Navbar 
+        styling text links weirds
+        Socials color and Etc
+        
     Buttons on hover
         some of theme disappear due to backgrounds
 

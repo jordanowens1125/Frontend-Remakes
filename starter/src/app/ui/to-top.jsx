@@ -1,5 +1,5 @@
 "use client";
-import UpSvgComponent from "../icons/up";
+import UpSvgComponent from "../svgs/up";
 import "./to-top.scss";
 
 import { useEffect } from "react";

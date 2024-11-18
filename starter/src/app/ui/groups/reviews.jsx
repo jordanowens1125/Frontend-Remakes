@@ -1,6 +1,6 @@
-import QuotationSvgComponent from "@/app/icons/quotations";
+import QuotationSvgComponent from "@/app/svgs/quotations";
 import "./reviews.scss";
-import StarSvgComponent from "@/app/icons/star";
+import StarSvgComponent from "@/app/svgs/star";
 
 export default function ReviewsGroup() {
   return (

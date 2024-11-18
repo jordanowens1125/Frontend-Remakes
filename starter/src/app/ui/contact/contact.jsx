@@ -1,4 +1,4 @@
-import PointOnMapSvgComponent from "@/app/icons/pointonmap";
+import PointOnMapSvgComponent from "@/app/svgs/pointonmap";
 import Form2 from "../form/form2";
 import Header1 from "../headers/header1";
 import "./contact.scss";

@@ -1,4 +1,4 @@
-import StarSvgComponent from "@/app/icons/star";
+import StarSvgComponent from "@/app/svgs/star";
 import "./stars.scss";
 export default function StarsGroup() {
   return (

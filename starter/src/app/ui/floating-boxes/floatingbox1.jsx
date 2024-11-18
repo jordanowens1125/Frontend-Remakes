@@ -1,11 +1,11 @@
 import "./floatingbox1.scss";
-import HammerSVGComponent from "@/app/icons/hammer";
+import HammerSVGComponent from "@/app/svgs/hammer";
 
 export default function FloatingBox1({
   icon = <HammerSVGComponent />,
   headertext = "45",
   text = "Experience of Work",
-  span="+",
+  span = "+",
 }) {
   return (
     <>

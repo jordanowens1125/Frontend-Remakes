@@ -1,5 +1,5 @@
-import HammerSVGComponent from "../../icons/hammer";
-import SVGHammer from "../../icons/hammer";
+import HammerSVGComponent from "../../svgs/hammer";
+import SVGHammer from "../../svgs/hammer";
 import "./services1.scss";
 
 export default function Services1Group({
@@ -33,7 +33,7 @@ export default function Services1Group({
       {items.map((item, count) => (
         <li key={item.header} className="item">
           {/* <div className={iconClass}>{item.icon}</div> */}
-          <p className="count item-h-6">{count+1}</p>
+          <p className="count item-h-6">{count + 1}</p>
           <span className={itemHeaderClass}>{item.header}</span>
           <p className="text">{item.text}</p>
         </li>

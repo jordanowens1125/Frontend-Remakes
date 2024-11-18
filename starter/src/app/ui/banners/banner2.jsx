@@ -1,4 +1,4 @@
-import DiamondSvgComponent from "@/app/icons/diamond";
+import DiamondSvgComponent from "@/app/svgs/diamond";
 import "./banner2.scss";
 
 export default function Banner2() {

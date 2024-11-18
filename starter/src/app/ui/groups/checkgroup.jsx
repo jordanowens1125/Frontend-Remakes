@@ -1,5 +1,4 @@
 import "./checkgroup.scss";
-import Item15 from "../item/item9";
 
 export default function CheckGroup({
   items = [
@@ -17,7 +16,8 @@ export default function CheckGroup({
   return (
     <ul className="checkgroup group">
       {items.map((item) => (
-        <Item15 key={item.text} text={item.text} />
+        // <Item15 key={item.text} text={item.text} />
+        <></>
       ))}
     </ul>
   );
